@@ -1,0 +1,70 @@
+[
+    {
+        "name": "Fight",
+        "description": "A deadly fight occurs.",
+        "lethal": true,
+        "num_affected": 2,
+        "num_killers": 1,
+        "num_killed": 1,
+        "stats_changes": [
+            {
+                "health": -50,
+                "hunger": 0,
+                "thirst": 0,
+                "combat_power": 0,
+                "stealth": 0,
+                "vision": 0,
+                "charisma": 0
+            },
+            {
+                "health": -50,
+                "hunger": 0,
+                "thirst": 0,
+                "combat_power": 0,
+                "stealth": 0,
+                "vision": 0,
+                "charisma": 0
+            }
+        ],
+        "bonus_items": [
+            ["Sword"], 
+            ["Shield"]
+        ],
+        "removed_items": [
+            [], 
+            []
+        ],
+        "relation_changes": [
+            {
+                "target": 1,
+                "status": "Enemy"
+            }
+        ]
+    },
+    {
+        "name": "Find Food",
+        "description": "Find some food.",
+        "lethal": false,
+        "num_affected": 1,
+        "num_killers": 0,
+        "num_killed": 0,
+        "stats_changes": [
+            {
+                "health": 0,
+                "hunger": 20,
+                "thirst": 0,
+                "combat_power": 0,
+                "stealth": 0,
+                "vision": 0,
+                "charisma": 0
+            }
+        ],
+        "bonus_items": [
+            ["Food"]
+        ],
+        "removed_items": [
+            []
+        ],
+        "relation_changes": []
+    }
+]
