@@ -1,0 +1,622 @@
+[
+    {
+        "name": "Picks flowers",
+        "description": "Tribute 1 picks flowers.",
+        "usually_lethal": false,
+        "num_affected": 1,
+        "num_killers": 0,
+        "stats_changes": {
+            "0": {
+                "hunger": 0,
+                "thirst": 0,
+                "health": 5,
+                "combat_power": 0,
+                "stealth": 0,
+                "vision": 0,
+                "charisma": 0
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {}
+    },
+    {
+        "name": "Sees in the distance",
+        "description": "Tribute 1 sees Tribute 2 in the distance but ignores them for now.",
+        "usually_lethal": false,
+        "num_affected": 2,
+        "num_killers": 0,
+        "stats_changes": {},
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {}
+    },
+    {
+        "name": "Thinks about home",
+        "description": "Tribute 1 thinks about home.",
+        "usually_lethal": false,
+        "num_affected": 1,
+        "num_killers": 0,
+        "stats_changes": {
+            "0": {
+                "health": -5
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {}
+    },
+    {
+        "name": "Shank scenario",
+        "description": "Tribute 1 tries to shank Tribute 2.",
+        "usually_lethal": true,
+        "num_affected": 2,
+        "num_killers": 1,
+        "killers": [],
+        "stats_changes": {
+            "1": {
+                "health": -50
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {}
+    },
+    {
+        "name": "Eats something inedible",
+        "description": "Tribute 1 tries to eat something inedible.",
+        "usually_lethal": false,
+        "num_affected": 1,
+        "num_killers": 0,
+        "stats_changes": {
+            "0": {
+                "health": -30,
+                "hunger": -30
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {}
+    },
+    {
+        "name": "Talks to self",
+        "description": "Tribute 1 starts talking to themselves.",
+        "usually_lethal": false,
+        "num_affected": 1,
+        "num_killers": 0,
+        "stats_changes": {},
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {}
+    },
+    {
+        "name": "Shoots with an arrow",
+        "description": "Tribute 1 shoots Tribute 2 with an arrow and hit the body.",
+        "usually_lethal": true,
+        "num_affected": 2,
+        "num_killers": 1,
+        "stats_changes": {
+            "1": {
+                "health": -70
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {}
+    },
+    {
+        "name": "Shoots with an arrow",
+        "description": "Tribute 1 shoots Tribute 2 with an arrow and hit the head.",
+        "usually_lethal": true,
+        "num_affected": 2,
+        "num_killers": 1,
+        "stats_changes": {
+            "1": {
+                "health": -70
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {}
+    },
+    {
+        "name": "Picks up medicine",
+        "description": "Tribute 1 picks up some medicine.",
+        "usually_lethal": false,
+        "num_affected": 1,
+        "num_killers": 0,
+        "stats_changes": {},
+        "bonus_items": {
+            "0": ["Medicine"]
+        },
+        "removed_items": {},
+        "relation_changes": {}
+    },
+    {
+        "name": "Thinks about murder",
+        "description": "Tribute 1 thinks about murder.",
+        "usually_lethal": false,
+        "num_affected": 1,
+        "num_killers": 0,
+        "stats_changes": {},
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {}
+    },
+    {
+        "name": "Shoots and misses",
+        "description": "Tribute 1 tries to shoot Tribute 2 with an arrow but misses.",
+        "usually_lethal": false,
+        "num_affected": 2,
+        "num_killers": 0,
+        "stats_changes": {
+            "0": {
+                "combat_power": 1
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {}
+    },
+    {
+        "name": "Removes head with broadsword",
+        "description": "Tribute 1 removes Tribute 2's head with a broadsword.",
+        "usually_lethal": true,
+        "num_affected": 2,
+        "num_killers": 1,
+        "stats_changes": {
+            "0": {
+                "combat_power": 10
+            },
+            "1": {
+                "health": -100
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {}
+    },
+    {
+        "name": "Throws a rock",
+        "description": "Tribute 1 throws a rock at Tribute 2's face with different outcomes based on injuries.",
+        "usually_lethal": false,
+        "num_affected": 2,
+        "num_killers": 0,
+        "stats_changes": {
+            "1": {
+                "health": -20
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {}
+    },
+    {
+        "name": "Steps on a landmine",
+        "description": "Tribute 1 steps on a landmine and dies.",
+        "usually_lethal": true,
+        "num_affected": 1,
+        "num_killers": 0,
+        "stats_changes": {
+            "0": {
+                "health": -100
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {}
+    },
+    {
+        "name": "Hides in bushes",
+        "description": "Tribute 1 hides in some bushes.",
+        "usually_lethal": false,
+        "num_affected": 1,
+        "num_killers": 0,
+        "stats_changes": {
+            "0": {
+                "stealth": 5
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {}
+    },
+    {
+        "name": "Receives supply drop",
+        "description": "Tribute 1 receives a supply drop from an unknown sponsor.",
+        "usually_lethal": false,
+        "num_affected": 1,
+        "num_killers": 0,
+        "stats_changes": {},
+        "bonus_items": {
+            "0": ["Food", "Water", "Medicine"]
+        },
+        "removed_items": {},
+        "relation_changes": {}
+    },
+    {
+        "name": "Steps in something indescribable",
+        "description": "Tribute 1 steps in something indescribable.",
+        "usually_lethal": false,
+        "num_affected": 1,
+        "num_killers": 0,
+        "stats_changes": {
+            "0": {
+                "stealth": -1
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {}
+    },
+    {
+        "name": "Climbs a tree or dies of dysentery",
+        "description": "Tribute 1 climbs a tree with a chance of dying from dysentery.",
+        "usually_lethal": true,
+        "num_affected": 1,
+        "num_killers": 0,
+        "stats_changes": {
+            "0": {
+                "health": -100
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {}
+    },
+    {
+        "name": "Tires from running",
+        "description": "Tribute 1 tires themselves out from running.",
+        "usually_lethal": false,
+        "num_affected": 1,
+        "num_killers": 0,
+        "stats_changes": {
+            "0": {
+                "health": -5,
+                "hunger": -10,
+                "thirst": -10
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {}
+    },
+    {
+        "name": "Begs for mercy and allowed",
+        "description": "Tribute 2 begs Tribute 1 for mercy, and Tribute 1 allows it.",
+        "usually_lethal": false,
+        "num_affected": 2,
+        "num_killers": 0,
+        "stats_changes": {},
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {
+            "1": {
+                "target": 0,
+                "status": "Neutral"
+            }
+        }
+    },
+    {
+        "name": "Begs for mercy and killed",
+        "description": "Tribute 1 begs Tribute 2 for mercy but is killed by Tribute 2.",
+        "usually_lethal": true,
+        "num_affected": 2,
+        "num_killers": 1,
+        "stats_changes": {
+            "0": {
+                "health": -100
+            },
+            "1": {
+                "combat_power": 10
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {}
+    },
+    {
+        "name": "Bit by a savage rabbit",
+        "description": "Tribute 1 gets bit by a savage rabbit with different outcomes.",
+        "usually_lethal": false,
+        "num_affected": 1,
+        "num_killers": 0,
+        "stats_changes": {
+            "0": {
+                "health": -10
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {}
+    },
+    {
+        "name": "Activates tripwire and dies",
+        "description": "Tribute 1 activates a tripwire and gets shot with poison darts, dying.",
+        "usually_lethal": true,
+        "num_affected": 1,
+        "num_killers": 0,
+        "stats_changes": {
+            "0": {
+                "health": -100
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {}
+    },
+    {
+        "name": "Strangles to death",
+        "description": "Tribute 1 strangles Tribute 2 to death.",
+        "usually_lethal": true,
+        "num_affected": 2,
+        "num_killers": 1,
+        "stats_changes": {
+            "0": {
+                "combat_power": 10
+            },
+            "1": {
+                "health": -100
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {}
+    },
+    {
+        "name": "Poisons a potato",
+        "description": "Tribute 1 poisons a potato.",
+        "usually_lethal": false,
+        "num_affected": 1,
+        "num_killers": 0,
+        "stats_changes": {},
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {}
+    },
+    {
+        "name": "Carves initials into a tree",
+        "description": "Tribute 1 carves their initials into a tree.",
+        "usually_lethal": false,
+        "num_affected": 1,
+        "num_killers": 0,
+        "stats_changes": {},
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {}
+    },
+    {
+        "name": "Swordfight with outcomes based on injuries",
+        "description": "Tribute 1 gets in a swordfight with Tribute 2 with different outcomes based on injuries.",
+        "usually_lethal": true,
+        "num_affected": 2,
+        "num_killers": 1,
+        "stats_changes": {
+            "0": {
+                "combat_power": 10
+            },
+            "1": {
+                "health": -50
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {}
+    },
+    {
+        "name": "Caves skull in with a club",
+        "description": "Tribute 1 caves Tribute 2's skull in with a club.",
+        "usually_lethal": true,
+        "num_affected": 2,
+        "num_killers": 1,
+        "stats_changes": {
+            "0": {
+                "combat_power": 10
+            },
+            "1": {
+                "health": -100
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {}
+    },
+    {
+        "name": "Thinks about the human condition",
+        "description": "Tribute 1 thinks about the human condition.",
+        "usually_lethal": false,
+        "num_affected": 1,
+        "num_killers": 0,
+        "stats_changes": {
+            "0": {
+                "charisma": 1
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {}
+    },
+    {
+        "name": "Finds corpse or mortally wounded",
+        "description": "Tribute 1 finds a corpse or gets mortally wounded by Tribute 2.",
+        "usually_lethal": true,
+        "num_affected": 2,
+        "num_killers": 1,
+        "stats_changes": {
+            "0": {
+                "health": -100
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {}
+    },
+    {
+        "name": "Nearly steps on a landmine",
+        "description": "Tribute 1 nearly steps on a landmine.",
+        "usually_lethal": false,
+        "num_affected": 1,
+        "num_killers": 0,
+        "stats_changes": {},
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {}
+    },
+    {
+        "name": "Creepily watches",
+        "description": "Tribute 1 creepily watches Tribute 2.",
+        "usually_lethal": false,
+        "num_affected": 2,
+        "num_killers": 0,
+        "stats_changes": {},
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {}
+    },
+    {
+        "name": "Stabs in the heart",
+        "description": "Tribute 1 stabs Tribute 2 in the heart.",
+        "usually_lethal": true,
+        "num_affected": 2,
+        "num_killers": 1,
+        "stats_changes": {
+            "0": {
+                "combat_power": 10
+            },
+            "1": {
+                "health": -100
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {}
+    },
+    {
+        "name": "Various actions",
+        "description": "Tribute 1 performs various actions including practicing stabbing, shooting a squirrel, etc.",
+        "usually_lethal": false,
+        "num_affected": 1,
+        "num_killers": 0,
+        "stats_changes": {
+            "0": {
+                "combat_power": 5
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {}
+    },
+    {
+        "name": "Punches a leaf",
+        "description": "Tribute 1 punches a leaf.",
+        "usually_lethal": false,
+        "num_affected": 1,
+        "num_killers": 0,
+        "stats_changes": {},
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {}
+    },
+    {
+        "name": "Pisses in a bush",
+        "description": "Tribute 1 pisses in a bush.",
+        "usually_lethal": false,
+        "num_affected": 1,
+        "num_killers": 0,
+        "stats_changes": {},
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {}
+    },
+    {
+        "name": "Looks for food",
+        "description": "Tribute 1 looks desperately for something to eat.",
+        "usually_lethal": false,
+        "num_affected": 1,
+        "num_killers": 0,
+        "stats_changes": {
+            "0": {
+                "hunger": 10
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {}
+    },
+    {
+        "name": "Tripwire scenario",
+        "description": "Tribute 1 trips a tripwire and gets shot in the arm with an arrow.",
+        "usually_lethal": false,
+        "num_affected": 1,
+        "num_killers": 0,
+        "stats_changes": {
+            "0": {
+                "health": -20
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {}
+    },
+    {
+        "name": "Exploring",
+        "description": "Tribute 1 does some exploring.",
+        "usually_lethal": false,
+        "num_affected": 1,
+        "num_killers": 0,
+        "stats_changes": {
+            "0": {
+                "vision": 5
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {}
+    },
+    {
+        "name": "Sings songs together",
+        "description": "Tribute 1 and Tribute 2 sing songs together.",
+        "usually_lethal": false,
+        "num_affected": 2,
+        "num_killers": 0,
+        "stats_changes": {},
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {
+            "0": {
+                "target": 1,
+                "status": "Friend"
+            }
+        }
+    },
+    {
+        "name": "Tries to eat tree bark",
+        "description": "Tribute 1 tries to eat tree bark.",
+        "usually_lethal": false,
+        "num_affected": 1,
+        "num_killers": 0,
+        "stats_changes": {
+            "0": {
+                "hunger": -10
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {}
+    },
+    {
+        "name": "Smacks with a yardstick",
+        "description": "Tribute 1 smacks Tribute 2 with a yardstick.",
+        "usually_lethal": false,
+        "num_affected": 2,
+        "num_killers": 0,
+        "stats_changes": {
+            "1": {
+                "health": -5
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {}
+    }
+]
