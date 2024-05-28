@@ -60,32 +60,22 @@ class Tribute:
 
 
 class Action:
-    def __init__(self, name, description, usually_lethal, num_affected, num_killers, num_killed, stats_changes, bonus_items=None, removed_items=None, relation_changes=None):
+    def __init__(self, name, description, usually_lethal, num_affected, num_killers, num_killed, stats_changes, bonus_items=None, removed_items=None, relation_changes=None, requirements = None):
         self.name = name
         self.description = description
         self.usually_lethal = usually_lethal
         self.num_affected = num_affected
         self.num_killers = num_killers
         self.num_killed = num_killed
-        self.stats_changes = stats_changes  # List of dicts for each affected tribute
-        self.bonus_items = bonus_items or []  # List of items for each affected tribute
-        self.removed_items = removed_items or []  # List of items for each affected tribute
-        self.relation_changes = relation_changes or []  # List of dicts for each affected tribute
+        self.stats_changes = stats_changes or {}
+        self.bonus_items = bonus_items  or {}
+        self.removed_items = removed_items  or {}
+        self.relation_changes = relation_changes  or {}
+        self.requirements = requirements
 
     def __repr__(self):
         return f"Action(name={self.name})"
 
-
-
-class Item:
-    def __init__(self, name, item_type, stackable, stats_change):
-        self.name = name
-        self.item_type = item_type
-        self.stackable = stackable
-        self.stats_change = stats_change
-
-    def __repr__(self):
-        return f"Item(name={self.name}, type={self.item_type})"
 
 
 import json
@@ -144,7 +134,7 @@ class Game:
                         return False
                 # Check items requirements
                 for item in reqs.get('items', []):
-                    if item not in [inv_item.name for inv_item in tribute.inventory]:
+                    if item.lower() not in [inv_item.lower() for inv_item in tribute.inventory]:
                         return False
                 # Check relations requirements
                 for target_index, status in reqs.get('relations', {}).items():
