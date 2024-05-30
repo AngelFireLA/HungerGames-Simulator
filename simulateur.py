@@ -3,7 +3,7 @@ enzo = ["océane", "jade", "joanna", "sylvia", "valentine", "bianca"]
 print("Simulateur Enzo")
 input("Tu trouves une meuf sur Insta belle, quel est son nom : ")
 print("Whoa le gormiti, mais quand même, que veux-tu faire ?")
-choix = input("Choisi : 1. La DM sur Insta 2. L'ajouter sur Snap 3. Lui parler IRL.")
+choix = input("Choisi : 1. La DM sur Snap 2. L'ajouter sur Insta 3. Lui parler IRL.")
 
 if choix not in ["1", "2", "3"]:
     print("Ce n'est pas un choix, carton rouge !!!")

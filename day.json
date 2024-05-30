@@ -5,6 +5,7 @@
         "usually_lethal": false,
         "num_affected": 1,
         "num_killers": 0,
+        "killers": [],
         "stats_changes": {
             "0": {
                 "health": 5
@@ -23,6 +24,7 @@
         "usually_lethal": false,
         "num_affected": 2,
         "num_killers": 0,
+        "killers":  [],
         "stats_changes": {
             "0": {
                 "vision": 10,
@@ -40,6 +42,7 @@
         "usually_lethal": false,
         "num_affected": 1,
         "num_killers": 0,
+        "killers":  [],
         "stats_changes": {
             "0": {
                 "health": -5
@@ -56,7 +59,7 @@
         "usually_lethal": true,
         "num_affected": 2,
         "num_killers": 1,
-        "killers": [],
+        "killers": ["0"],
         "stats_changes": {
             "1": {
                 "health": -60
@@ -73,6 +76,7 @@
         "usually_lethal": false,
         "num_affected": 1,
         "num_killers": 0,
+        "killers":  [],
         "stats_changes": {
             "0": {
                 "health": -30,
@@ -90,6 +94,7 @@
         "usually_lethal": false,
         "num_affected": 1,
         "num_killers": 0,
+        "killers":  [],
         "stats_changes": {
             "0": {
                 "stealth": -5
@@ -106,6 +111,7 @@
         "usually_lethal": true,
         "num_affected": 2,
         "num_killers": 1,
+        "killers": ["0"],
         "stats_changes": {
             "1": {
                 "health": -70
@@ -126,6 +132,7 @@
         "usually_lethal": false,
         "num_affected": 1,
         "num_killers": 0,
+        "killers":  [],
         "stats_changes": {},
         "bonus_items": {
             "0": ["Medicine"]
@@ -140,6 +147,7 @@
         "usually_lethal": false,
         "num_affected": 1,
         "num_killers": 0,
+        "killers":  [],
         "stats_changes": {
             "0":
                 {
@@ -150,14 +158,13 @@
         "removed_items": {},
         "relation_changes": {},
         "requirements": {
-            "0":
-                {
-                    "stats":{
-                        "health": {
-                            "min": 30
-                        }
+            "0": {
+                "stats":{
+                    "health": {
+                        "min": 30
                     }
                 }
+            }
         }
     },
     {
@@ -166,15 +173,16 @@
         "usually_lethal": false,
         "num_affected": 2,
         "num_killers": 0,
-        "stats_changes": {
-            "0": {
-                "combat_power": 1
-            }
-        },
+        "killers":  [],
+        "stats_changes": {},
         "bonus_items": {},
-        "removed_items": {},
+        "removed_items": {
+            "0": ["Arrow"]
+        },
         "relation_changes": {},
-        "requirements": {}
+        "requirements": {
+            "0": ["Bow", "Arrow"]
+        }
     },
     {
         "name": "Removes head with broadsword",
@@ -182,6 +190,7 @@
         "usually_lethal": true,
         "num_affected": 2,
         "num_killers": 1,
+        "killers": ["0"],
         "stats_changes": {
             "0": {
                 "combat_power": 10
@@ -193,17 +202,20 @@
         "bonus_items": {},
         "removed_items": {},
         "relation_changes": {},
-        "requirements": {}
+        "requirements": {
+            "0": ["Weapon"]
+        }
     },
     {
         "name": "Throws a rock",
-        "description": "Tribute 1 throws a rock at Tribute 2's face with different outcomes based on injuries.",
-        "usually_lethal": false,
+        "description": "Tribute 1 throws a rock at Tribute 2's face.",
+        "usually_lethal": true,
         "num_affected": 2,
-        "num_killers": 0,
+        "num_killers": 1,
+        "killers": ["0"],
         "stats_changes": {
             "1": {
-                "health": -20
+                "health": -30
             }
         },
         "bonus_items": {},
@@ -217,6 +229,7 @@
         "usually_lethal": true,
         "num_affected": 1,
         "num_killers": 0,
+        "killers":  [],
         "stats_changes": {
             "0": {
                 "health": -100
@@ -233,9 +246,10 @@
         "usually_lethal": false,
         "num_affected": 1,
         "num_killers": 0,
+        "killers":  [],
         "stats_changes": {
             "0": {
-                "stealth": 5
+                "stealth": 10
             }
         },
         "bonus_items": {},
@@ -249,6 +263,7 @@
         "usually_lethal": false,
         "num_affected": 1,
         "num_killers": 0,
+        "killers":  [],
         "stats_changes": {},
         "bonus_items": {
             "0": ["Food", "Water", "Medicine"]
@@ -258,30 +273,15 @@
         "requirements": {}
     },
     {
-        "name": "Steps in something indescribable",
-        "description": "Tribute 1 steps in something indescribable.",
-        "usually_lethal": false,
-        "num_affected": 1,
-        "num_killers": 0,
-        "stats_changes": {
-            "0": {
-                "stealth": -1
-            }
-        },
-        "bonus_items": {},
-        "removed_items": {},
-        "relation_changes": {},
-        "requirements": {}
-    },
-    {
-        "name": "Climbs a tree or dies of dysentery",
-        "description": "Tribute 1 climbs a tree with a chance of dying from dysentery.",
+        "name": "Climbs a tree and fall",
+        "description": "Tribute 1 climbs a tree but falls, injuring himself severely.",
         "usually_lethal": true,
         "num_affected": 1,
         "num_killers": 0,
+        "killers":  [],
         "stats_changes": {
             "0": {
-                "health": -100
+                "health": -80
             }
         },
         "bonus_items": {},
@@ -295,11 +295,12 @@
         "usually_lethal": false,
         "num_affected": 1,
         "num_killers": 0,
+        "killers":  [],
         "stats_changes": {
             "0": {
-                "health": -5,
-                "hunger": -10,
-                "thirst": -10
+                "health": -10,
+                "hunger": -20,
+                "thirst": -40
             }
         },
         "bonus_items": {},
@@ -313,6 +314,7 @@
         "usually_lethal": false,
         "num_affected": 2,
         "num_killers": 0,
+        "killers":  [],
         "stats_changes": {},
         "bonus_items": {},
         "removed_items": {},
@@ -325,12 +327,10 @@
         "usually_lethal": true,
         "num_affected": 2,
         "num_killers": 1,
+        "killers": ["1"],
         "stats_changes": {
             "0": {
                 "health": -100
-            },
-            "1": {
-                "combat_power": 10
             }
         },
         "bonus_items": {},
@@ -340,13 +340,14 @@
     },
     {
         "name": "Bit by a savage rabbit",
-        "description": "Tribute 1 gets bit by a savage rabbit with different outcomes.",
+        "description": "Tribute 1 gets bit by a savage rabbit.",
         "usually_lethal": false,
         "num_affected": 1,
         "num_killers": 0,
+        "killers":  [],
         "stats_changes": {
             "0": {
-                "health": -10
+                "health": -15
             }
         },
         "bonus_items": {},
@@ -360,6 +361,7 @@
         "usually_lethal": true,
         "num_affected": 1,
         "num_killers": 0,
+        "killers":  [],
         "stats_changes": {
             "0": {
                 "health": -100
@@ -376,10 +378,8 @@
         "usually_lethal": true,
         "num_affected": 2,
         "num_killers": 1,
+        "killers": ["0"],
         "stats_changes": {
-            "0": {
-                "combat_power": 10
-            },
             "1": {
                 "health": -100
             }
@@ -395,8 +395,11 @@
         "usually_lethal": false,
         "num_affected": 1,
         "num_killers": 0,
+        "killers":  [],
         "stats_changes": {},
-        "bonus_items": {},
+        "bonus_items": {
+            "0": ["Poisoned Potato"]
+        },
         "removed_items": {},
         "relation_changes": {},
         "requirements": {}
@@ -407,6 +410,7 @@
         "usually_lethal": false,
         "num_affected": 1,
         "num_killers": 0,
+        "killers":  [],
         "stats_changes": {},
         "bonus_items": {},
         "removed_items": {},
@@ -419,6 +423,7 @@
         "usually_lethal": true,
         "num_affected": 2,
         "num_killers": 1,
+        "killers": [],
         "stats_changes": {
             "0": {
                 "combat_power": 10
@@ -438,6 +443,7 @@
         "usually_lethal": true,
         "num_affected": 2,
         "num_killers": 1,
+        "killers": [],
         "stats_changes": {
             "0": {
                 "combat_power": 10
@@ -457,6 +463,7 @@
         "usually_lethal": false,
         "num_affected": 1,
         "num_killers": 0,
+        "killers":  [],
         "stats_changes": {
             "0": {
                 "charisma": 1
@@ -473,6 +480,7 @@
         "usually_lethal": true,
         "num_affected": 2,
         "num_killers": 1,
+        "killers": [],
         "stats_changes": {
             "0": {
                 "health": -100
@@ -489,6 +497,7 @@
         "usually_lethal": false,
         "num_affected": 1,
         "num_killers": 0,
+        "killers":  [],
         "stats_changes": {},
         "bonus_items": {},
         "removed_items": {},
@@ -501,6 +510,7 @@
         "usually_lethal": false,
         "num_affected": 2,
         "num_killers": 0,
+        "killers":  [],
         "stats_changes": {},
         "bonus_items": {},
         "removed_items": {},
@@ -513,6 +523,7 @@
         "usually_lethal": true,
         "num_affected": 2,
         "num_killers": 1,
+        "killers": [],
         "stats_changes": {
             "0": {
                 "combat_power": 10
@@ -532,6 +543,7 @@
         "usually_lethal": false,
         "num_affected": 1,
         "num_killers": 0,
+        "killers":  [],
         "stats_changes": {
             "0": {
                 "combat_power": 5
@@ -548,6 +560,7 @@
         "usually_lethal": false,
         "num_affected": 1,
         "num_killers": 0,
+        "killers":  [],
         "stats_changes": {},
         "bonus_items": {},
         "removed_items": {},
@@ -560,6 +573,7 @@
         "usually_lethal": false,
         "num_affected": 1,
         "num_killers": 0,
+        "killers":  [],
         "stats_changes": {},
         "bonus_items": {},
         "removed_items": {},
@@ -567,17 +581,33 @@
         "requirements": {}
     },
     {
-        "name": "Looks for food",
-        "description": "Tribute 1 looks desperately for something to eat.",
+        "name": "Looks for food but fail",
+        "description": "Tribute 1 looks desperately for something to eat but doesn't find any.",
         "usually_lethal": false,
         "num_affected": 1,
         "num_killers": 0,
+        "killers":  [],
         "stats_changes": {
             "0": {
-                "hunger": 10
+                "hunger": -20
             }
         },
         "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {},
+        "requirements": {}
+    },
+    {
+        "name": "Looks for food and succeed",
+        "description": "Tribute 1 looks desperately for something to eat and finally find some.",
+        "usually_lethal": false,
+        "num_affected": 1,
+        "num_killers": 0,
+        "killers":  [],
+        "stats_changes": {},
+        "bonus_items": {
+            "0": ["Food"]
+        },
         "removed_items": {},
         "relation_changes": {},
         "requirements": {}
@@ -588,9 +618,10 @@
         "usually_lethal": false,
         "num_affected": 1,
         "num_killers": 0,
+        "killers":  [],
         "stats_changes": {
             "0": {
-                "health": -20
+                "health": -30
             }
         },
         "bonus_items": {},
@@ -604,9 +635,10 @@
         "usually_lethal": false,
         "num_affected": 1,
         "num_killers": 0,
+        "killers":  [],
         "stats_changes": {
             "0": {
-                "vision": 5
+                "vision": 15
             }
         },
         "bonus_items": {},
@@ -620,18 +652,29 @@
         "usually_lethal": false,
         "num_affected": 2,
         "num_killers": 0,
+        "killers":  [],
         "stats_changes": {},
         "bonus_items": {},
         "removed_items": {},
-        "relation_changes": {},
+                "relation_changes": {
+            "0": {
+                "target": 1,
+                "status": "Friend"
+            },
+            "1": {
+                "target": 0,
+                "status": "Friend"
+            }
+        },
         "requirements": {}
     },
     {
         "name": "Tries to eat tree bark",
-        "description": "Tribute 1 tries to eat tree bark.",
+        "description": "Tribute 1 tries to eat tree bark. It doesn't taste good.",
         "usually_lethal": false,
         "num_affected": 1,
         "num_killers": 0,
+        "killers":  [],
         "stats_changes": {
             "0": {
                 "hunger": -10
@@ -648,9 +691,10 @@
         "usually_lethal": false,
         "num_affected": 2,
         "num_killers": 0,
+        "killers":  ["0"],
         "stats_changes": {
             "1": {
-                "health": -5
+                "health": -10
             }
         },
         "bonus_items": {},
