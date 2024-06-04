@@ -56,17 +56,23 @@ class Tribute:
         self.relations[other_tribute.name] = status
 
     def __repr__(self):
-        return f"Tribute(name={self.name}, district={self.district}, health={self.health}, is_alive={self.is_alive})"
+        return (
+            f"Tribute(name={self.name}, gender={self.gender}, district={self.district}, "
+            f"health={self.health}, hunger={self.hunger}, thirst={self.thirst}, "
+            f"combat_power={self.combat_power}, stealth={self.stealth}, vision={self.vision}, "
+            f"charisma={self.charisma}, inventory={self.inventory}, kill_count={self.kill_count}, "
+            f"is_alive={self.is_alive})"
+        )
 
 
 class Action:
-    def __init__(self, name, description, usually_lethal, num_affected, num_killers, num_killed, stats_changes, bonus_items=None, removed_items=None, relation_changes=None, requirements = None):
+    def __init__(self, name, description, usually_lethal, num_affected, num_killers, killers, stats_changes, bonus_items=None, removed_items=None, relation_changes=None, requirements = None):
         self.name = name
         self.description = description
         self.usually_lethal = usually_lethal
         self.num_affected = num_affected
         self.num_killers = num_killers
-        self.num_killed = num_killed
+        self.killers = killers
         self.stats_changes = stats_changes or {}
         self.bonus_items = bonus_items  or {}
         self.removed_items = removed_items  or {}
@@ -77,6 +83,7 @@ class Action:
         return f"Action(name={self.name})"
 
 
+from deep_translator import GoogleTranslator, MyMemoryTranslator
 
 import json
 import random
@@ -145,7 +152,11 @@ class Game:
     def execute_action(self, tributes, action):
         killed_tributes = []
         killers = []
+        description = action.description
+        for i, tribute in enumerate(tributes):
+            description = description.replace(f"Tribute {i + 1}", tribute.name)
 
+        print(MyMemoryTranslator(source='english', target='french').translate(description))
         for i, tribute in enumerate(tributes):
             if tribute.is_alive:
                 # Update tribute stats based on the action
@@ -229,16 +240,19 @@ class Game:
                 usually_lethal = action_data['usually_lethal']
                 num_affected = action_data['num_affected']
                 num_killers = action_data['num_killers']
-                num_killed = action_data['num_killed']
+                killers = action_data['killers']
                 stats_changes = action_data['stats_changes']
                 bonus_items = action_data.get('bonus_items', {})
                 removed_items = action_data.get('removed_items', {})
                 relation_changes = action_data.get('relation_changes', {})
                 requirements = action_data.get('requirements', {})
                 actions.append(
-                    Action(name, description, usually_lethal, num_affected, num_killers, num_killed, stats_changes, bonus_items,
+                    Action(name, description, usually_lethal, num_affected, num_killers, killers, stats_changes, bonus_items,
                            removed_items, relation_changes, requirements))
             return actions
+
+    def remaining_tributes(self):
+        return [tribute for tribute in self.tributes if tribute.is_alive]
 
     def __repr__(self):
         return f"Game(day_count={self.day_count}, tributes_remaining={len(self.tributes)})"
@@ -247,29 +261,41 @@ class Game:
 
 # Create tributes
 tributes = [
-    Tribute("Tribute1", "M", "District1"),
-    Tribute("Tribute2", "F", "District2"),
+    Tribute("Lysandre", "M", "District1"),
+    Tribute("Olivier", "M", "District2"),
+    Tribute("Enzo", "M", "District1"),
+    Tribute("Ayoub", "M", "District2"),
+    Tribute("Emrys", "M", "District1"),
+    Tribute("Ludo", "M", "District2"),
+    Tribute("Lisandru", "M", "District2"),
+    Tribute("Maxime", "M", "District2"),
+    Tribute("Yassine", "M", "District2"),
+
     # Add more tributes
 ]
 
 # Load actions from JSON files
 day_actions = Game.load_actions_from_json('day.json')
 night_actions = Game.load_actions_from_json('night.json')
-the_feast_actions = Game.load_actions_from_json('the_feast.json')
+#the_feast_actions = Game.load_actions_from_json('the_feast.json')
 
 # Action pools
 action_pools = {
     "day": day_actions,
     "night": night_actions,
-    "the_feast": the_feast_actions
+    #"the_feast": the_feast_actions
 }
 
 # Create the game
 game = Game(tributes, action_pools)
+print("Bienvenue aux Hunger Games, appuyez pour continuer")
+while game.remaining_tributes():
+    input()
+    game.run_day()
+    input()
+    game.run_night()
+print(game.remaining_tributes())
 
-# Run the game
-game.run_day()
-game.run_night()
-
-print(game)
+for tribute in game.tributes:
+    print(tribute)
 

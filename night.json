@@ -13,7 +13,8 @@
         },
         "bonus_items": {},
         "removed_items": {},
-        "relation_changes": {}
+        "relation_changes": {},
+        "requirements": {}
     },
     {
         "name": "Walks in circles",
@@ -29,7 +30,8 @@
         },
         "bonus_items": {},
         "removed_items": {},
-        "relation_changes": {}
+        "relation_changes": {},
+        "requirements": {}
     },
     {
         "name": "Sleeps in a tree",
@@ -45,7 +47,8 @@
         },
         "bonus_items": {},
         "removed_items": {},
-        "relation_changes": {}
+        "relation_changes": {},
+        "requirements": {}
     },
     {
         "name": "Kills in sleep succeed",
@@ -64,7 +67,8 @@
         },
         "bonus_items": {},
         "removed_items": {},
-        "relation_changes": {}
+        "relation_changes": {},
+        "requirements": {}
     },
     {
         "name": "Kills in sleep but fail",
@@ -83,7 +87,8 @@
         },
         "bonus_items": {},
         "removed_items": {},
-        "relation_changes": {}
+        "relation_changes": {},
+        "requirements": {}
     },
     {
         "name": "Invites to shelter",
@@ -100,7 +105,8 @@
                 "target": 1,
                 "status": "Friend"
             }
-        }
+        },
+        "requirements": {}
     },
     {
         "name": "Falls on sharp rocks",
@@ -116,7 +122,8 @@
         },
         "bonus_items": {},
         "removed_items": {},
-        "relation_changes": {}
+        "relation_changes": {},
+        "requirements": {}
     },
     {
         "name": "Kills self",
@@ -124,7 +131,7 @@
         "usually_lethal": true,
         "num_affected": 1,
         "num_killers": 0,
-        "killers": [],
+        "killers": ["0"],
         "stats_changes": {
             "0": {
                 "health": -100
@@ -132,7 +139,8 @@
         },
         "bonus_items": {},
         "removed_items": {},
-        "relation_changes": {}
+        "relation_changes": {},
+        "requirements": {}
     },
     {
         "name": "Falls asleep in flower patch",
@@ -143,12 +151,13 @@
         "killers": [],
         "stats_changes": {
             "0": {
-                "health": 10
+                "health": 15
             }
         },
         "bonus_items": {},
         "removed_items": {},
-        "relation_changes": {}
+        "relation_changes": {},
+        "requirements": {}
     },
     {
         "name": "Tries not to think about tomorrow",
@@ -160,7 +169,8 @@
         "stats_changes": {},
         "bonus_items": {},
         "removed_items": {},
-        "relation_changes": {}
+        "relation_changes": {},
+        "requirements": {}
     },
     {
         "name": "Falls asleep standing up",
@@ -176,7 +186,8 @@
         },
         "bonus_items": {},
         "removed_items": {},
-        "relation_changes": {}
+        "relation_changes": {},
+        "requirements": {}
     },
     {
         "name": "Stumbles in darkness",
@@ -192,7 +203,8 @@
         },
         "bonus_items": {},
         "removed_items": {},
-        "relation_changes": {}
+        "relation_changes": {},
+        "requirements": {}
     },
     {
         "name": "Eats a poison potato",
@@ -210,7 +222,8 @@
         "removed_items": {
             "1": ["Poisonous Potato"]
         },
-        "relation_changes": {}
+        "relation_changes": {},
+        "requirements": {}
     },
     {
         "name": "Bit by a bat and dies",
@@ -226,7 +239,8 @@
         },
         "bonus_items": {},
         "removed_items": {},
-        "relation_changes": {}
+        "relation_changes": {},
+        "requirements": {}
     },
     {
         "name": "Hugs a tree",
@@ -238,23 +252,25 @@
         "stats_changes": {},
         "bonus_items": {},
         "removed_items": {},
-        "relation_changes": {}
+        "relation_changes": {},
+        "requirements": {}
     },
     {
         "name": "Collapses from exhaustion",
         "description": "Tribute 1 collapses from exhaustion.",
-        "usually_lethal": false,
+        "usually_lethal": true,
         "num_affected": 1,
         "num_killers": 0,
         "killers": [],
         "stats_changes": {
             "0": {
-                "health": -10
+                "health": -20
             }
         },
         "bonus_items": {},
         "removed_items": {},
-        "relation_changes": {}
+        "relation_changes": {},
+        "requirements": {}
     },
     {
         "name": "Falls asleep in a ditch",
@@ -270,7 +286,8 @@
         },
         "bonus_items": {},
         "removed_items": {},
-        "relation_changes": {}
+        "relation_changes": {},
+        "requirements": {}
     },
     {
         "name": "Sleeps with one eye open",
@@ -279,10 +296,15 @@
         "num_affected": 1,
         "num_killers": 0,
         "killers": [],
-        "stats_changes": {},
+        "stats_changes": {
+            "0": {
+                "health": 5
+            }
+        },
         "bonus_items": {},
         "removed_items": {},
-        "relation_changes": {}
+        "relation_changes": {},
+        "requirements": {}
     },
     {
         "name": "Nightmares about killing",
@@ -291,10 +313,15 @@
         "num_affected": 2,
         "num_killers": 0,
         "killers": [],
-        "stats_changes": {},
+        "stats_changes": {
+            "0": {
+                "health": -5
+            }
+        },
         "bonus_items": {},
         "removed_items": {},
-        "relation_changes": {}
+        "relation_changes": {},
+        "requirements": {}
     },
     {
         "name": "Falls asleep to crickets",
@@ -310,7 +337,8 @@
         },
         "bonus_items": {},
         "removed_items": {},
-        "relation_changes": {}
+        "relation_changes": {},
+        "requirements": {}
     },
     {
         "name": "Dreams about being a victor",
@@ -319,10 +347,16 @@
         "num_affected": 1,
         "num_killers": 0,
         "killers": [],
-        "stats_changes": {},
+        "stats_changes": {
+            "0": {
+                "combat_power": 5,
+                "health": 10
+            }
+        },
         "bonus_items": {},
         "removed_items": {},
-        "relation_changes": {}
+        "relation_changes": {},
+        "requirements": {}
     },
     {
         "name": "Stares at the night sky",
@@ -334,7 +368,8 @@
         "stats_changes": {},
         "bonus_items": {},
         "removed_items": {},
-        "relation_changes": {}
+        "relation_changes": {},
+        "requirements": {}
     },
     {
         "name": "Imagines a better world",
@@ -346,7 +381,8 @@
         "stats_changes": {},
         "bonus_items": {},
         "removed_items": {},
-        "relation_changes": {}
+        "relation_changes": {},
+        "requirements": {}
     },
     {
         "name": "Falls asleep near a bush",
@@ -362,7 +398,8 @@
         },
         "bonus_items": {},
         "removed_items": {},
-        "relation_changes": {}
+        "relation_changes": {},
+        "requirements": {}
     },
     {
         "name": "Struggles to fall asleep",
@@ -371,10 +408,15 @@
         "num_affected": 1,
         "num_killers": 0,
         "killers": [],
-        "stats_changes": {},
+        "stats_changes": {
+            "0": {
+                "health": 5
+            }
+        },
         "bonus_items": {},
         "removed_items": {},
-        "relation_changes": {}
+        "relation_changes": {},
+        "requirements": {}
     },
     {
         "name": "Lays with eyes wide open",
@@ -386,7 +428,8 @@
         "stats_changes": {},
         "bonus_items": {},
         "removed_items": {},
-        "relation_changes": {}
+        "relation_changes": {},
+        "requirements": {}
     },
     {
         "name": "Has nightmares",
@@ -402,7 +445,8 @@
         },
         "bonus_items": {},
         "removed_items": {},
-        "relation_changes": {}
+        "relation_changes": {},
+        "requirements": {}
     },
     {
         "name": "Makes a bed from grass",
@@ -413,12 +457,13 @@
         "killers": [],
         "stats_changes": {
             "0": {
-                "health": 5
+                "health": 15
             }
         },
         "bonus_items": {},
         "removed_items": {},
-        "relation_changes": {}
+        "relation_changes": {},
+        "requirements": {}
     },
     {
         "name": "Keeps watch in a tree",
@@ -434,6 +479,7 @@
         },
         "bonus_items": {},
         "removed_items": {},
-        "relation_changes": {}
+        "relation_changes": {},
+        "requirements": {}
     }
 ]

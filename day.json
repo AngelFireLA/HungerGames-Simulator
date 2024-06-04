@@ -546,7 +546,7 @@
         "killers":  [],
         "stats_changes": {
             "0": {
-                "combat_power": 5
+                "combat_power": 20
             }
         },
         "bonus_items": {},
@@ -698,6 +698,21 @@
             }
         },
         "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {},
+        "requirements": {}
+    },
+    {
+        "name": "Finds bow and arrow",
+        "description": "Tribute 1 finds a sponsor drop containg a bow and a few arrows.",
+        "usually_lethal": false,
+        "num_affected": 1,
+        "num_killers": 0,
+        "killers":  [],
+        "stats_changes": {},
+        "bonus_items": {
+            "0": ["Bow", "Arrow", "Arrow", "Arrow"]
+        },
         "removed_items": {},
         "relation_changes": {},
         "requirements": {}
