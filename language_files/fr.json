@@ -1,0 +1,339 @@
+{
+    "Picks flowers": {
+        "Picks flowers_day": "Tribute 1 cueille des fleurs.",
+        "Picks flowers_night": "Tribute 1 cueille des fleurs après avoir regardé le ciel nocturne."
+    },
+    "Sees in the distance": {
+        "Sees in the distance_day": "Tribute 1 voit Tribute 2 au loin mais les ignore pour l'instant."
+    },
+    "Thinks about home": {
+        "Thinks about home_day": "Tribute 1 pense à la maison."
+    },
+    "Shank scenario": {
+        "Shank scenario_day": "Tribute 1 essaie de poignarder Tribute 2."
+    },
+    "Eats something inedible": {
+        "Eats something inedible_day": "Tribute 1 essaie de manger quelque chose d'immangeable."
+    },
+    "Talks to self": {
+        "Talks to self_day": "Tribute 1 commence à parler tout seul."
+    },
+    "Shoots with an arrow": {
+        "Shoots with an arrow_day": "Tribute 1 tire une flèche sur Tribute 2."
+    },
+    "Picks up medicine": {
+        "Picks up medicine_day": "Tribute 1 ramasse des médicaments."
+    },
+    "Thinks about murder": {
+        "Thinks about murder_day": "Tribute 1 pense au meurtre."
+    },
+    "Shoots and misses": {
+        "Shoots and misses_day": "Tribute 1 essaie de tirer une flèche sur Tribute 2 mais manque sa cible."
+    },
+    "Removes head with broadsword": {
+        "Removes head with broadsword_day": "Tribute 1 décapite Tribute 2 avec une épée large."
+    },
+    "Throws a rock": {
+        "Throws a rock_day": "Tribute 1 lance une pierre au visage de Tribute 2."
+    },
+    "Steps on a landmine": {
+        "Steps on a landmine_day": "Tribute 1 marche sur une mine terrestre et meurt."
+    },
+    "Hides in bushes": {
+        "Hides in bushes_day": "Tribute 1 se cache dans des buissons."
+    },
+    "Receives supply drop": {
+        "Receives supply drop_day": "Tribute 1 reçoit une livraison de ravitaillement d'un sponsor inconnu."
+    },
+    "Climbs a tree and fall": {
+        "Climbs a tree and fall_day": "Tribute 1 grimpe à un arbre mais tombe, se blessant gravement."
+    },
+    "Tires from running": {
+        "Tires from running_day": "Tribute 1 s'épuise à force de courir."
+    },
+    "Begs for mercy and allowed": {
+        "Begs for mercy and allowed_day": "Tribute 2 supplie Tribute 1 de lui laisser la vie sauve, et Tribute 1 accepte."
+    },
+    "Begs for mercy and killed": {
+        "Begs for mercy and killed_day": "Tribute 1 supplie Tribute 2 de lui laisser la vie sauve mais est tué par Tribute 2."
+    },
+    "Bit by a savage rabbit": {
+        "Bit by a savage rabbit_day": "Tribute 1 est mordu par un lapin sauvage."
+    },
+    "Activates tripwire and dies": {
+        "Activates tripwire and dies_day": "Tribute 1 active un fil piège et est abattu par des fléchettes empoisonnées, mourant."
+    },
+    "Strangles to death": {
+        "Strangles to death_day": "Tribute 1 étrangle Tribute 2 à mort."
+    },
+    "Poisons a potato": {
+        "Poisons a potato_day": "Tribute 1 empoisonne une pomme de terre."
+    },
+    "Carves initials into a tree": {
+        "Carves initials into a tree_day": "Tribute 1 grave ses initiales dans un arbre."
+    },
+    "Swordfight": {
+        "Swordfight_day": "Tribute 1 engage un combat à l'épée avec Tribute 2."
+    },
+    "Caves skull in with a club": {
+        "Caves skull in with a club_day": "Tribute 1 fracasse le crâne de Tribute 2 avec une massue."
+    },
+    "Thinks about the human condition": {
+        "Thinks about the human condition_day": "Tribute 1 réfléchit à la condition humaine."
+    },
+    "Finds corpse or mortally wounded": {
+        "Finds corpse or mortally wounded_day": "Tribute 1 trouve un cadavre ou est mortellement blessé par Tribute 2."
+    },
+    "Nearly steps on a landmine": {
+        "Nearly steps on a landmine_day": "Tribute 1 manque de marcher sur une mine terrestre."
+    },
+    "Creepily watches": {
+        "Creepily watches_day": "Tribute 1 observe Tribute 2 de manière inquiétante."
+    },
+    "Stabs in the heart": {
+        "Stabs in the heart_day": "Tribute 1 poignarde Tribute 2 en plein cœur."
+    },
+    "Various actions": {
+        "Various actions_day": "Tribute 1 effectue diverses actions, y compris s'entraîner à poignarder, tirer sur un écureuil, etc."
+    },
+    "Punches a leaf": {
+        "Punches a leaf_day": "Tribute 1 frappe une feuille."
+    },
+    "Pisses in a bush": {
+        "Pisses in a bush_day": "Tribute 1 pisse dans un buisson."
+    },
+    "Looks for food but fail": {
+        "Looks for food but fail_day": "Tribute 1 cherche désespérément quelque chose à manger mais ne trouve rien."
+    },
+    "Looks for food and succeed": {
+        "Looks for food and succeed_day": "Tribute 1 cherche désespérément quelque chose à manger et finit par en trouver."
+    },
+    "Tripwire scenario": {
+        "Tripwire scenario_day": "Tribute 1 déclenche un fil piège et est blessé au bras par une flèche."
+    },
+    "Exploring": {
+        "Exploring_day": "Tribute 1 explore."
+    },
+    "Sings songs together": {
+        "Sings songs together_day": "Tribute 1 et Tribute 2 chantent des chansons ensemble."
+    },
+    "Tries to eat tree bark": {
+        "Tries to eat tree bark_day": "Tribute 1 essaie de manger de l'écorce d'arbre. Ce n'est pas bon."
+    },
+    "Smacks with a yardstick": {
+        "Smacks with a yardstick_day": "Tribute 1 frappe Tribute 2 avec un mètre."
+    },
+    "Finds bow and arrow": {
+        "Finds bow and arrow_day": "Tribute 1 trouve un paquet de ravitaillement contenant un arc et quelques flèches."
+    },
+    "Cries to sleep": {
+        "Cries to sleep_night": "Tribute 1 pleure jusqu'à s'endormir."
+    },
+    "Walks in circles": {
+        "Walks in circles_night": "Tribute 1 marche en cercles, incapable de dormir."
+    },
+    "Sleeps in a tree": {
+        "Sleeps in a tree_night": "Tribute 1 monte dans un arbre et y dort."
+    },
+    "Kills in sleep succeed": {
+        "Kills in sleep succeed_night": "Tribute 1 tue Tribute 2 dans son sommeil."
+    },
+    "Kills in sleep but fail": {
+        "Kills in sleep but fail_night": "Tribute 1 essaie de tuer Tribute 2 dans son sommeil mais il se réveille et se défend."
+    },
+    "Invites to shelter": {
+        "Invites to shelter_night": "Tribute 1 invite Tribute 2 dans son abri."
+    },
+    "Falls on sharp rocks": {
+        "Falls on sharp rocks_night": "Tribute 1 trébuche et tombe sur des rochers tranchants."
+    },
+    "Kills self": {
+        "Kills self_night": "Tribute 1 voit un avenir sombre et se suicide."
+    },
+    "Falls asleep in flower patch": {
+        "Falls asleep in flower patch_night": "Tribute 1 s'endort dans un parterre de fleurs."
+    },
+    "Tries not to think about tomorrow": {
+        "Tries not to think about tomorrow_night": "Tribute 1 essaie de ne pas penser à demain."
+    },
+    "Falls asleep standing up": {
+        "Falls asleep standing up_night": "Tribute 1 s'endort debout."
+    },
+    "Stumbles in darkness": {
+        "Stumbles in darkness_night": "Tribute 1 trébuche dans l'obscurité."
+    },
+    "Eats a poison potato": {
+        "Eats a poison potato_night": "Tribute 1 mange une pomme de terre empoisonnée placée par Tribute 2."
+    },
+    "Bit by a bat and dies": {
+        "Bit by a bat and dies_night": "Tribute 1 est mordu par une chauve-souris et meurt."
+    },
+    "Hugs a tree": {
+        "Hugs a tree_night": "Tribute 1 serre un arbre dans ses bras."
+    },
+    "Collapses from exhaustion": {
+        "Collapses from exhaustion_night": "Tribute 1 s'effondre d'épuisement."
+    },
+    "Falls asleep in a ditch": {
+        "Falls asleep in a ditch_night": "Tribute 1 s'endort dans un fossé."
+    },
+    "Sleeps with one eye open": {
+        "Sleeps with one eye open_night": "Tribute 1 dort avec un œil ouvert."
+    },
+    "Nightmares about killing": {
+        "Nightmares about killing_night": "Tribute 1 fait des cauchemars où Tribute 2 le tue."
+    },
+    "Falls asleep to crickets": {
+        "Falls asleep to crickets_night": "Tribute 1 s'endort au son des grillons."
+    },
+    "Dreams about being a victor": {
+        "Dreams about being a victor_night": "Tribute 1 rêve d'être le vainqueur."
+    },
+    "Stares at the night sky": {
+        "Stares at the night sky_night": "Tribute 1 regarde le ciel nocturne."
+    },
+    "Imagines a better world": {
+        "Imagines a better world_night": "Tribute 1 imagine un monde où chacun peut être ce qu'il veut."
+    },
+    "Falls asleep near a bush": {
+        "Falls asleep near a bush_night": "Tribute 1 s'endort près d'un buisson."
+    },
+    "Struggles to fall asleep": {
+        "Struggles to fall asleep_night": "Tribute 1 a du mal à s'endormir mais y parvient finalement."
+    },
+    "Lays with eyes wide open": {
+        "Lays with eyes wide open_night": "Tribute 1 reste allongé les yeux grands ouverts."
+    },
+    "Has nightmares": {
+        "Has nightmares_night": "Tribute 1 fait des cauchemars."
+    },
+    "Makes a bed from grass": {
+        "Makes a bed from grass_night": "Tribute 1 fabrique un lit avec de l'herbe."
+    },
+    "Keeps watch in a tree": {
+        "Keeps watch in a tree_night": "Tribute 1 monte la garde dans un arbre."
+    },
+  "Sets a Trap": {
+    "Sets a Trap_day": "Tribute 1 pose un piège dans l'espoir d'attraper de la nourriture."
+  },
+  "Scavenges for Supplies": {
+    "Scavenges for Supplies_day": "Tribute 1 part à la recherche de provisions."
+  },
+  "Camouflages Themselves": {
+    "Camouflages Themselves_day": "Tribute 1 se camoufle avec de la peinture."
+  },
+  "Makes an Alliance": {
+    "Makes an Alliance_day": "Tribute 1 et Tribute 2 acceptent de se protéger mutuellement, formant une alliance."
+  },
+  "Betrays an Ally": {
+    "Betrays an Ally_day": "Voyant une opportunité, Tribute 1 trahit son allié, Tribute 2!"
+  },
+  "Sends a Smoke Signal": {
+    "Sends a Smoke Signal_day": "Tribute 1 allume un feu et envoie un signal de fumée dans le ciel."
+  },
+  "Crafts a Weapon": {
+    "Crafts a Weapon_day": "Tribute 1 fabrique une lance à l'aide d'un couteau et d'un bâton."
+  },
+  "Sleeps Fitfully": {
+    "Sleeps Fitfully_night": "Tribute 1 a du mal à trouver une position confortable et dort mal."
+  },
+  "Haunted by Memories": {
+    "Haunted by Memories_night": "Les horreurs de l'arène pèsent sur l'esprit de Tribute 1, lui causant des cauchemars."
+  },
+  "Guarded by Ally": {
+    "Guarded by Ally_night": "Tribute 2 veille pendant que Tribute 1 dort profondément, reconnaissant de l'alliance."
+  },
+  "Ambushed in Sleep": {
+    "Ambushed in Sleep_night": "Tribute 1 est pris complètement au dépourvu lorsque Tribute 2 l'attaque dans son sommeil!"
+  },
+  "Forages for Edible Plants": {
+    "Forages for Edible Plants_day": "Tribute 1 cherche des plantes comestibles et trouve des baies et des racines."
+  },
+  "Practices with a Found Weapon": {
+    "Practices with a Found Weapon_day": "Tribute 1 s'entraîne avec une arme qu'il a trouvée."
+  },
+  "Treats Wounds with Herbs": {
+    "Treats Wounds with Herbs_day": "Tribute 1 soigne ses blessures avec des herbes."
+  },
+  "Drinks from a Stream": {
+    "Drinks from a Stream_day": "Ayant désespérément besoin d'eau, Tribute 1 boit dans un ruisseau voisin, espérant qu'il n'est pas contaminé."
+  },
+  "Hunts with an Ally": {
+    "Hunts with an Ally_day": "Tribute 1 et Tribute 2 font équipe pour chasser de la nourriture."
+  },
+  "Steals from a Sleeping Tribute": {
+    "Steals from a Sleeping Tribute_day": "Profitant de sa vulnérabilité, Tribute 1 vole Tribute 2 pendant son sommeil."
+  },
+  "Finds a Sponsor Gift": {
+    "Finds a Sponsor Gift_day": "Tribute 1 trouve un cadeau d'un sponsor! Il contient de précieuses provisions."
+  },
+  "Suffers from Heat Exhaustion": {
+    "Suffers from Heat Exhaustion_day": "Le soleil brûlant fait des ravages sur Tribute 1, qui s'effondre d'épuisement dû à la chaleur."
+  },
+  "Climbs for a Better View": {
+    "Climbs for a Better View_day": "Tribute 1 grimpe à un arbre pour avoir une meilleure vue des environs."
+  },
+  "Mourns a Fallen Tribute": {
+    "Mourns a Fallen Tribute_day": "Tribute 1 prend un moment pour pleurer la perte d'un autre tribut."
+  },
+  "Sets a Diversion": {
+    "Sets a Diversion_day": "Tribute 1 allume un feu pour faire diversion."
+  },
+  "Fishes in a River": {
+    "Fishes in a River_day": "Tribute 1 tente sa chance à la pêche dans la rivière, espérant attraper quelque chose à manger."
+  },
+  "Stumbles Upon a Muttation": {
+    "Stumbles Upon a Muttation_day": "Tribute 1 rencontre une terrifiante mutation créée par les juges des Jeux!"
+  },
+  "Receives Medical Attention from Hovercraft": {
+    "Receives Medical Attention from Hovercraft_day": "Grièvement blessé, Tribute 1 reçoit des soins médicaux d'un aéroglisseur."
+  },
+  "Trains with a Mentor Figure": {
+    "Trains with a Mentor Figure_day": "Tribute 1 reçoit une formation précieuse de son allié plus expérimenté, Tribute 2."
+  },
+  "Seeks Shelter in a Cave": {
+    "Seeks Shelter in a Cave_night": "Cherchant à se protéger des éléments et des ennemis potentiels, Tribute 1 trouve refuge dans une grotte."
+  },
+  "Patrols the Perimeter with Ally": {
+    "Patrols the Perimeter with Ally_night": "Tribute 1 et son allié Tribute 2 surveillent leur camp en patrouillant le périmètre."
+  },
+  "Sharpen Weapons and Set Traps": {
+    "Sharpen Weapons and Set Traps_night": "Se préparant aux dangers qui guettent dans l'obscurité, Tribute 1 aiguise ses armes et pose des pièges."
+  },
+  "Tries to Escape the Arena (and Fails)": {
+    "Tries to Escape the Arena (and Fails)_night": "Cherchant désespérément à s'échapper de l'arène, Tribute 1 tente de s'enfuir mais est rattrapé par les défenses des juges des Jeux."
+  },
+  "Eaten by Mysterious Creature": {
+    "Eaten by Mysterious Creature_night": "Un hurlement à glacer le sang résonne dans la nuit alors que Tribute 1 est emporté par une créature invisible."
+  },
+  "Sleeps Peacefully": {
+    "Sleeps Peacefully_night": "Le ventre plein et le cœur tranquille, Tribute 1 profite d'une rare nuit de sommeil paisible."
+  },
+  "Attacked by Nightmares (But Escapes)": {
+    "Attacked by Nightmares (But Escapes)_night": "Tribute 1 se réveille en sueur, hanté par des cauchemars de l'arène."
+  },
+  "Whispers Plans with Ally": {
+    "Whispers Plans with Ally_night": "À la faveur de l'obscurité, Tribute 1 et son allié Tribute 2 murmurent leurs plans de survie."
+  },
+  "Loses Sanity from Hunger": {
+    "Loses Sanity from Hunger_night": "Rendu fou par la faim, Tribute 1 devient imprévisible et dangereux."
+  },
+  "Catches Rainwater": {
+    "Catches Rainwater_night": "Alors que la pluie tombe, Tribute 1 utilise une bâche et un récipient pour récupérer la précieuse eau de pluie."
+  },
+  "Stares into the Fire, Lost in Thought": {
+    "Stares into the Fire, Lost in Thought_night": "Tribute 1 fixe le feu, perdu dans ses pensées sur son destin dans les Jeux."
+  },
+  "Slips While Climbing and Falls": {
+    "Slips While Climbing and Falls_night": "Un faux pas tragique conduit à la mort de Tribute 1 qui chute en grimpant dans le noir."
+  },
+  "Sings a Lullaby to Themselves": {
+    "Sings a Lullaby to Themselves_night": "Trouvant du réconfort dans ce qui lui est familier, Tribute 1 se chante une berceuse."
+  },
+  "Watches the Stars with an Ally": {
+    "Watches the Stars with an Ally_night": "Partageant un moment de paix, Tribute 1 et Tribute 2 regardent les étoiles ensemble."
+  },
+  "Tends to Their Injuries": {
+    "Tends to Their Injuries_night": "Sous la faible lumière de la lune, Tribute 1 soigne soigneusement ses blessures."
+  }
+}

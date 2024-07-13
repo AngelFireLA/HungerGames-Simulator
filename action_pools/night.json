@@ -1,0 +1,841 @@
+[
+    {
+        "name": "Cries to sleep",
+        "usually_lethal": false,
+        "num_affected": 1,
+        "num_killers": 0,
+        "killers": [],
+        "stats_changes": {
+            "0": {
+                "charisma": -20
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {},
+        "requirements": {}
+    },
+    {
+        "name": "Walks in circles",
+        "usually_lethal": false,
+        "num_affected": 1,
+        "num_killers": 0,
+        "killers": [],
+        "stats_changes": {
+            "0": {
+                "health": -5
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {},
+        "requirements": {}
+    },
+    {
+        "name": "Sleeps in a tree",
+        "usually_lethal": false,
+        "num_affected": 1,
+        "num_killers": 0,
+        "killers": [],
+        "stats_changes": {
+            "0": {
+                "health": 10
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {},
+        "requirements": {}
+    },
+    {
+        "name": "Kills in sleep succeed",
+        "usually_lethal": true,
+        "num_affected": 2,
+        "num_killers": 1,
+        "killers": ["0"],
+        "stats_changes": {
+            "0": {
+                "combat_power": 10
+            },
+            "1": {
+                "health": -100
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {},
+        "requirements": {}
+    },
+    {
+        "name": "Kills in sleep but fail",
+        "usually_lethal": true,
+        "num_affected": 2,
+        "num_killers": 1,
+        "killers": ["1"],
+        "stats_changes": {
+            "0": {
+                "combat_power": -70,
+                "health": -50
+            },
+            "1": {
+                "health": -20
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {},
+        "requirements": {}
+    },
+    {
+        "name": "Invites to shelter",
+        "usually_lethal": false,
+        "num_affected": 2,
+        "num_killers": 0,
+        "killers": [],
+        "stats_changes": {},
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {
+            "0": {
+                "target": 1,
+                "status": "Friend"
+            }
+        },
+        "requirements": {}
+    },
+    {
+        "name": "Falls on sharp rocks",
+        "usually_lethal": true,
+        "num_affected": 1,
+        "num_killers": 0,
+        "killers": [],
+        "stats_changes": {
+            "0": {
+                "health": -25
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {},
+        "requirements": {}
+    },
+    {
+        "name": "Kills self",
+        "usually_lethal": true,
+        "num_affected": 1,
+        "num_killers": 0,
+        "killers": ["0"],
+        "stats_changes": {
+            "0": {
+                "health": -100
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {},
+        "requirements": {}
+    },
+    {
+        "name": "Falls asleep in flower patch",
+        "usually_lethal": false,
+        "num_affected": 1,
+        "num_killers": 0,
+        "killers": [],
+        "stats_changes": {
+            "0": {
+                "health": 15
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {},
+        "requirements": {}
+    },
+    {
+        "name": "Tries not to think about tomorrow",
+        "usually_lethal": false,
+        "num_affected": 1,
+        "num_killers": 0,
+        "killers": [],
+        "stats_changes": {},
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {},
+        "requirements": {}
+    },
+    {
+        "name": "Falls asleep standing up",
+        "usually_lethal": false,
+        "num_affected": 1,
+        "num_killers": 0,
+        "killers": [],
+        "stats_changes": {
+            "0": {
+                "health": 10
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {},
+        "requirements": {}
+    },
+    {
+        "name": "Stumbles in darkness",
+        "usually_lethal": false,
+        "num_affected": 1,
+        "num_killers": 0,
+        "killers": [],
+        "stats_changes": {
+            "0": {
+                "health": -5
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {},
+        "requirements": {}
+    },
+    {
+        "name": "Eats a poison potato",
+        "usually_lethal": true,
+        "num_affected": 2,
+        "num_killers": 1,
+        "killers": ["1"],
+        "stats_changes": {
+            "0": {
+                "health": -100
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {
+            "1": ["Poisonous Potato"]
+        },
+        "relation_changes": {},
+        "requirements": {
+            "1": {
+              "items": ["Poisonous Potato"]
+            }
+        }
+    },
+    {
+        "name": "Bit by a bat and dies",
+        "usually_lethal": true,
+        "num_affected": 1,
+        "num_killers": 0,
+        "killers": [],
+        "stats_changes": {
+            "0": {
+                "health": -100
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {},
+        "requirements": {}
+    },
+    {
+        "name": "Hugs a tree",
+        "usually_lethal": false,
+        "num_affected": 1,
+        "num_killers": 0,
+        "killers": [],
+        "stats_changes": {},
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {},
+        "requirements": {}
+    },
+    {
+        "name": "Collapses from exhaustion",
+        "usually_lethal": true,
+        "num_affected": 1,
+        "num_killers": 0,
+        "killers": [],
+        "stats_changes": {
+            "0": {
+                "health": -20
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {},
+        "requirements": {}
+    },
+    {
+        "name": "Falls asleep in a ditch",
+        "usually_lethal": false,
+        "num_affected": 1,
+        "num_killers": 0,
+        "killers": [],
+        "stats_changes": {
+            "0": {
+                "health": 10
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {},
+        "requirements": {}
+    },
+    {
+        "name": "Sleeps with one eye open",
+        "usually_lethal": false,
+        "num_affected": 1,
+        "num_killers": 0,
+        "killers": [],
+        "stats_changes": {
+            "0": {
+                "health": 5
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {},
+        "requirements": {}
+    },
+    {
+        "name": "Nightmares about killing",
+        "usually_lethal": false,
+        "num_affected": 2,
+        "num_killers": 0,
+        "killers": [],
+        "stats_changes": {
+            "0": {
+                "health": -5
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {},
+        "requirements": {}
+    },
+    {
+        "name": "Falls asleep to crickets",
+        "usually_lethal": false,
+        "num_affected": 1,
+        "num_killers": 0,
+        "killers": [],
+        "stats_changes": {
+            "0": {
+                "health": 10
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {},
+        "requirements": {}
+    },
+    {
+        "name": "Dreams about being a victor",
+        "usually_lethal": false,
+        "num_affected": 1,
+        "num_killers": 0,
+        "killers": [],
+        "stats_changes": {
+            "0": {
+                "combat_power": 5,
+                "health": 10
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {},
+        "requirements": {}
+    },
+    {
+        "name": "Stares at the night sky",
+        "usually_lethal": false,
+        "num_affected": 1,
+        "num_killers": 0,
+        "killers": [],
+        "stats_changes": {},
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {},
+        "requirements": {}
+    },
+    {
+        "name": "Imagines a better world",
+        "usually_lethal": false,
+        "num_affected": 1,
+        "num_killers": 0,
+        "killers": [],
+        "stats_changes": {},
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {},
+        "requirements": {}
+    },
+    {
+        "name": "Falls asleep near a bush",
+        "usually_lethal": false,
+        "num_affected": 1,
+        "num_killers": 0,
+        "killers": [],
+        "stats_changes": {
+            "0": {
+                "health": 10
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {},
+        "requirements": {}
+    },
+    {
+        "name": "Struggles to fall asleep",
+        "usually_lethal": false,
+        "num_affected": 1,
+        "num_killers": 0,
+        "killers": [],
+        "stats_changes": {
+            "0": {
+                "health": 5
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {},
+        "requirements": {}
+    },
+    {
+        "name": "Lays with eyes wide open",
+        "usually_lethal": false,
+        "num_affected": 1,
+        "num_killers": 0,
+        "killers": [],
+        "stats_changes": {},
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {},
+        "requirements": {}
+    },
+    {
+        "name": "Has nightmares",
+        "usually_lethal": false,
+        "num_affected": 1,
+        "num_killers": 0,
+        "killers": [],
+        "stats_changes": {
+            "0": {
+                "health": -5
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {},
+        "requirements": {}
+    },
+    {
+        "name": "Makes a bed from grass",
+        "usually_lethal": false,
+        "num_affected": 1,
+        "num_killers": 0,
+        "killers": [],
+        "stats_changes": {
+            "0": {
+                "health": 15
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {},
+        "requirements": {}
+    },
+    {
+        "name": "Keeps watch in a tree",
+        "usually_lethal": false,
+        "num_affected": 1,
+        "num_killers": 0,
+        "killers": [],
+        "stats_changes": {
+            "0": {
+                "vision": 15
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {},
+        "requirements": {}
+    },
+
+      {
+        "name": "Sleeps Fitfully",
+        "usually_lethal": false,
+        "num_affected": 1,
+        "num_killers": 0,
+        "killers": [],
+        "stats_changes": {
+            "0": {
+                "health": 5,
+                "hunger": -5,
+                "thirst": -5
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {},
+        "requirements": {}
+    },
+    {
+        "name": "Haunted by Memories",
+        "usually_lethal": false,
+        "num_affected": 1,
+        "num_killers": 0,
+        "killers": [],
+        "stats_changes": {
+            "0": {
+                "health": -10,
+                "combat_power": 5
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {},
+        "requirements": {}
+    },
+    {
+        "name": "Guarded by Ally",
+        "usually_lethal": false,
+        "num_affected": 2,
+        "num_killers": 0,
+        "killers": [],
+        "stats_changes": {
+            "0": {
+                "health": 10
+            },
+            "1": {
+                "health": 5
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {},
+        "requirements": {
+            "0": {
+                "relations": {
+                    "1": "Ally"
+                }
+            }
+        }
+    },
+    {
+        "name": "Ambushed in Sleep",
+        "usually_lethal": true,
+        "num_affected": 2,
+        "num_killers": 1,
+        "killers": ["1"],
+        "stats_changes": {
+            "0": {
+                "health": -80
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {},
+        "requirements": {}
+    },
+    {
+        "name": "Seeks Shelter in a Cave",
+        "usually_lethal": false,
+        "num_affected": 1,
+        "num_killers": 0,
+        "killers": [],
+        "stats_changes": {
+            "0": {
+                "health": 10,
+                "hunger": -5,
+                "thirst": -5
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {},
+        "requirements": {}
+    },
+    {
+        "name": "Patrols the Perimeter with Ally",
+        "usually_lethal": false,
+        "num_affected": 2,
+        "num_killers": 0,
+        "killers": [],
+        "stats_changes": {
+            "0": {
+                "vision": 5
+            },
+            "1": {
+                "vision": 5
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {},
+        "requirements": {
+            "0": {
+                "relations": {
+                    "1": "Ally"
+                }
+            }
+        }
+    },
+    {
+        "name": "Sharpen Weapons and Set Traps",
+        "usually_lethal": false,
+        "num_affected": 1,
+        "num_killers": 0,
+        "killers": [],
+        "stats_changes": {
+            "0": {
+                "combat_power": 5
+            }
+        },
+        "bonus_items": {
+            "0": ["Snare"]
+        },
+        "removed_items": {},
+        "relation_changes": {},
+        "requirements": {
+            "0": {
+                "items": ["Weapon"]
+            }
+        }
+    },
+    {
+        "name": "Tries to Escape the Arena (and Fails)",
+        "usually_lethal": true,
+        "num_affected": 1,
+        "num_killers": 0,
+        "killers": [],
+        "stats_changes": {
+            "0": {
+                "health": -50
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {},
+        "requirements": {}
+    },
+    {
+        "name": "Eaten by Mysterious Creature",
+        "usually_lethal": true,
+        "num_affected": 1,
+        "num_killers": 0,
+        "killers": [],
+        "stats_changes": {
+            "0": {
+                "health": -100
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {},
+        "requirements": {}
+    },
+    {
+        "name": "Sleeps Peacefully",
+        "usually_lethal": false,
+        "num_affected": 1,
+        "num_killers": 0,
+        "killers": [],
+        "stats_changes": {
+            "0": {
+                "health": 15,
+                "hunger": -5,
+                "thirst": -5
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {},
+        "requirements": {
+            "0": {
+                "stats": {
+                    "health": { "min": 80 }
+                }
+            }
+        }
+    },
+    {
+        "name": "Attacked by Nightmares (But Escapes)",
+        "usually_lethal": false,
+        "num_affected": 1,
+        "num_killers": 0,
+        "killers": [],
+        "stats_changes": {
+            "0": {
+                "health": -10,
+                "stealth": 5
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {},
+        "requirements": {}
+    },
+    {
+        "name": "Whispers Plans with Ally",
+        "usually_lethal": false,
+        "num_affected": 2,
+        "num_killers": 0,
+        "killers": [],
+        "stats_changes": {},
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {},
+        "requirements": {
+            "0": {
+                "relations": {
+                    "1": "Ally"
+                }
+            }
+        }
+    },
+    {
+        "name": "Loses Sanity from Hunger",
+        "usually_lethal": false,
+        "num_affected": 1,
+        "num_killers": 0,
+        "killers": [],
+        "stats_changes": {
+            "0": {
+                "combat_power": 10,
+                "stealth": -5,
+                "vision": -5
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {},
+        "requirements": {
+            "0": {
+                "stats": {
+                    "hunger": { "max": 20 }
+                }
+            }
+        }
+    },
+    {
+        "name": "Catches Rainwater",
+        "usually_lethal": false,
+        "num_affected": 1,
+        "num_killers": 0,
+        "killers": [],
+        "stats_changes": {
+            "0": {
+                "thirst": 15
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {
+            "0": ["Tarp", "Container"]
+        },
+        "relation_changes": {},
+        "requirements": {
+            "0": {
+                "items": ["Tarp", "Container"]
+            }
+        }
+    },
+    {
+        "name": "Stares into the Fire, Lost in Thought",
+        "usually_lethal": false,
+        "num_affected": 1,
+        "num_killers": 0,
+        "killers": [],
+        "stats_changes": {
+            "0": {
+                "charisma": 5
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {},
+        "requirements": {
+            "0": {
+                "items": ["Fire"]
+            }
+        }
+    },
+    {
+        "name": "Slips While Climbing and Falls",
+        "usually_lethal": true,
+        "num_affected": 1,
+        "num_killers": 0,
+        "killers": [],
+        "stats_changes": {
+            "0": {
+                "health": -60
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {},
+        "requirements": {}
+    },
+    {
+        "name": "Sings a Lullaby to Themselves",
+        "usually_lethal": false,
+        "num_affected": 1,
+        "num_killers": 0,
+        "killers": [],
+        "stats_changes": {
+            "0": {
+                "health": 5
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {},
+        "requirements": {}
+    },
+    {
+        "name": "Watches the Stars with an Ally",
+        "usually_lethal": false,
+        "num_affected": 2,
+        "num_killers": 0,
+        "killers": [],
+        "stats_changes": {},
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {
+            "0": {
+                "target": 1,
+                "status": "Friend"
+            },
+            "1": {
+                "target": 0,
+                "status": "Friend"
+            }
+        },
+        "requirements": {
+            "0": {
+                "relations": {
+                    "1": "Ally"
+                }
+            }
+        }
+    },
+    {
+        "name": "Tends to Their Injuries",
+        "usually_lethal": false,
+        "num_affected": 1,
+        "num_killers": 0,
+        "killers": [],
+        "stats_changes": {
+            "0": {
+                "health": 10
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {
+            "0": ["Bandages", "Medicine"]
+        },
+        "relation_changes": {},
+        "requirements": {
+            "0": {
+                "items": ["Bandages", "Medicine"]
+            }
+        }
+    }
+]

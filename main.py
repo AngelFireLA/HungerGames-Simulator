@@ -1,4 +1,4 @@
-import random
+import os
 
 
 class Tribute:
@@ -28,9 +28,14 @@ class Tribute:
 
     def change_health(self, amount):
         self.health += amount
+        if amount > 0:
+            print(f"{self.name} +{amount}❤️ ({self.health}❤️)")
+        else:
+            print(f"{self.name} {amount}❤️ ({self.health}❤️)")
         self.health = max(0, min(self.health, 100))  # Health should be between 0 and 100
         if self.health == 0:
             self.is_alive = False
+            print(f"{self.name} 💀")
 
     def change_hunger(self, amount):
         self.hunger += amount
@@ -66,7 +71,8 @@ class Tribute:
 
 
 class Action:
-    def __init__(self, name, description, usually_lethal, num_affected, num_killers, killers, stats_changes, bonus_items=None, removed_items=None, relation_changes=None, requirements = None):
+    def __init__(self, name, description, usually_lethal, num_affected, num_killers, killers, stats_changes,
+                 bonus_items=None, removed_items=None, relation_changes=None, requirements=None):
         self.name = name
         self.description = description
         self.usually_lethal = usually_lethal
@@ -74,24 +80,17 @@ class Action:
         self.num_killers = num_killers
         self.killers = killers
         self.stats_changes = stats_changes or {}
-        self.bonus_items = bonus_items  or {}
-        self.removed_items = removed_items  or {}
-        self.relation_changes = relation_changes  or {}
+        self.bonus_items = bonus_items or {}
+        self.removed_items = removed_items or {}
+        self.relation_changes = relation_changes or {}
         self.requirements = requirements
 
     def __repr__(self):
         return f"Action(name={self.name})"
 
 
-from deep_translator import GoogleTranslator, MyMemoryTranslator
-
 import json
 import random
-from collections import defaultdict
-
-import json
-import random
-from collections import defaultdict
 
 
 class Game:
@@ -102,10 +101,12 @@ class Game:
         self.action_pools = action_pools
 
     def run_day(self):
+        input()
         self.day_count += 1
         self.run_actions(self.action_pools['day'])
 
     def run_night(self):
+        input()
         self.run_actions(self.action_pools['night'])
 
     def run_actions(self, action_pool):
@@ -130,15 +131,19 @@ class Game:
         for i, tribute in enumerate(tributes):
             if str(i) in requirements:
                 reqs = requirements[str(i)]
+                try:
                 # Check stats requirements
-                for stat, value in reqs.get('stats', {}).items():
-                    if isinstance(value, dict):
-                        if 'min' in value and getattr(tribute, stat) < value['min']:
+                    for stat, value in reqs.get('stats', {}).items():
+                        if isinstance(value, dict):
+                            if 'min' in value and getattr(tribute, stat) < value['min']:
+                                return False
+                            if 'max' in value and getattr(tribute, stat) > value['max']:
+                                return False
+                        elif getattr(tribute, stat) < value:
                             return False
-                        if 'max' in value and getattr(tribute, stat) > value['max']:
-                            return False
-                    elif getattr(tribute, stat) < value:
-                        return False
+                except AttributeError as e:
+                    print(reqs)
+                    raise e
                 # Check items requirements
                 for item in reqs.get('items', []):
                     if item.lower() not in [inv_item.lower() for inv_item in tribute.inventory]:
@@ -156,7 +161,7 @@ class Game:
         for i, tribute in enumerate(tributes):
             description = description.replace(f"Tribute {i + 1}", tribute.name)
 
-        print(MyMemoryTranslator(source='english', target='french').translate(description))
+        print(description)
         for i, tribute in enumerate(tributes):
             if tribute.is_alive:
                 # Update tribute stats based on the action
@@ -231,25 +236,41 @@ class Game:
 
     @staticmethod
     def load_actions_from_json(file_path):
-        with open(file_path, 'r') as file:
+        lang_file_path = os.path.join('language_files', f'{config.language}.json')
+
+        with open(file_path, 'r', encoding="utf-8") as file:
             data = json.load(file)
-            actions = []
-            for action_data in data:
-                name = action_data['name']
-                description = action_data['description']
-                usually_lethal = action_data['usually_lethal']
-                num_affected = action_data['num_affected']
-                num_killers = action_data['num_killers']
-                killers = action_data['killers']
-                stats_changes = action_data['stats_changes']
-                bonus_items = action_data.get('bonus_items', {})
-                removed_items = action_data.get('removed_items', {})
-                relation_changes = action_data.get('relation_changes', {})
-                requirements = action_data.get('requirements', {})
-                actions.append(
-                    Action(name, description, usually_lethal, num_affected, num_killers, killers, stats_changes, bonus_items,
-                           removed_items, relation_changes, requirements))
-            return actions
+
+        with open(lang_file_path, 'r', encoding="utf-8") as lang_file:
+            lang_data = json.load(lang_file)
+
+        actions = []
+        pool_name = os.path.splitext(os.path.basename(file_path))[0]
+        for action_data in data:
+            name = action_data['name']
+            description_key = f"{name}_{pool_name}"
+            description = Game.get_description_from_lang(lang_data, description_key)
+            usually_lethal = action_data['usually_lethal']
+            num_affected = action_data['num_affected']
+            num_killers = action_data['num_killers']
+            killers = action_data['killers']
+            stats_changes = action_data['stats_changes']
+            bonus_items = action_data.get('bonus_items', {})
+            removed_items = action_data.get('removed_items', {})
+            relation_changes = action_data.get('relation_changes', {})
+            requirements = action_data.get('requirements', {})
+            actions.append(
+                Action(name, description, usually_lethal, num_affected, num_killers, killers, stats_changes,
+                       bonus_items,
+                       removed_items, relation_changes, requirements))
+        return actions
+
+    @staticmethod
+    def get_description_from_lang(lang_data, description_key):
+        for descriptions in lang_data.values():
+            if description_key in descriptions:
+                return descriptions[description_key]
+        return "Description not found"
 
     def remaining_tributes(self):
         return [tribute for tribute in self.tributes if tribute.is_alive]
@@ -258,6 +279,13 @@ class Game:
         return f"Game(day_count={self.day_count}, tributes_remaining={len(self.tributes)})"
 
 
+class Config:
+    def __init__(self, config_file):
+        with open(config_file, 'r') as file:
+            config = json.load(file)
+            self.language = config.get('language', 'en')
+
+config = Config('config.json')
 
 # Create tributes
 tributes = [
@@ -275,27 +303,23 @@ tributes = [
 ]
 
 # Load actions from JSON files
-day_actions = Game.load_actions_from_json('day.json')
-night_actions = Game.load_actions_from_json('night.json')
-#the_feast_actions = Game.load_actions_from_json('the_feast.json')
+day_actions = Game.load_actions_from_json('action_pools/day.json')
+night_actions = Game.load_actions_from_json('action_pools/night.json')
+# the_feast_actions = Game.load_actions_from_json('the_feast.json')
 
 # Action pools
 action_pools = {
     "day": day_actions,
     "night": night_actions,
-    #"the_feast": the_feast_actions
+    # "the_feast": the_feast_actions
 }
 
 # Create the game
 game = Game(tributes, action_pools)
 print("Bienvenue aux Hunger Games, appuyez pour continuer")
-while game.remaining_tributes():
-    input()
+while len(game.remaining_tributes()) > 1:
     game.run_day()
-    input()
     game.run_night()
-print(game.remaining_tributes())
 
-for tribute in game.tributes:
-    print(tribute)
+print(game.remaining_tributes())
 

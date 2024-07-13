@@ -1,7 +1,6 @@
 [
     {
         "name": "Cries to sleep",
-        "description": "Tribute 1 cries themselves to sleep.",
         "usually_lethal": false,
         "num_affected": 1,
         "num_killers": 0,
@@ -14,11 +13,11 @@
         "bonus_items": {},
         "removed_items": {},
         "relation_changes": {},
-        "requirements": {}
+        "requirements": {},
+        "description_key": "Cries to sleep_night"
     },
     {
         "name": "Walks in circles",
-        "description": "Tribute 1 walks around in circles, unable to sleep.",
         "usually_lethal": false,
         "num_affected": 1,
         "num_killers": 0,
@@ -31,11 +30,11 @@
         "bonus_items": {},
         "removed_items": {},
         "relation_changes": {},
-        "requirements": {}
+        "requirements": {},
+        "description_key": "Walks in circles_night"
     },
     {
         "name": "Sleeps in a tree",
-        "description": "Tribute 1 goes into a tree and sleeps there.",
         "usually_lethal": false,
         "num_affected": 1,
         "num_killers": 0,
@@ -48,15 +47,17 @@
         "bonus_items": {},
         "removed_items": {},
         "relation_changes": {},
-        "requirements": {}
+        "requirements": {},
+        "description_key": "Sleeps in a tree_night"
     },
     {
         "name": "Kills in sleep succeed",
-        "description": "Tribute 1 kills Tribute 2 in their sleep.",
         "usually_lethal": true,
         "num_affected": 2,
         "num_killers": 1,
-        "killers": ["0"],
+        "killers": [
+            "0"
+        ],
         "stats_changes": {
             "0": {
                 "combat_power": 10
@@ -68,15 +69,17 @@
         "bonus_items": {},
         "removed_items": {},
         "relation_changes": {},
-        "requirements": {}
+        "requirements": {},
+        "description_key": "Kills in sleep succeed_night"
     },
     {
         "name": "Kills in sleep but fail",
-        "description": "Tribute 1 tries killing Tribute 2 in their sleep but they wake up and fight back.",
         "usually_lethal": true,
         "num_affected": 2,
         "num_killers": 1,
-        "killers": ["1"],
+        "killers": [
+            "1"
+        ],
         "stats_changes": {
             "0": {
                 "combat_power": -70
@@ -88,11 +91,11 @@
         "bonus_items": {},
         "removed_items": {},
         "relation_changes": {},
-        "requirements": {}
+        "requirements": {},
+        "description_key": "Kills in sleep but fail_night"
     },
     {
         "name": "Invites to shelter",
-        "description": "Tribute 1 invites Tribute 2 into their shelter.",
         "usually_lethal": false,
         "num_affected": 2,
         "num_killers": 0,
@@ -106,11 +109,11 @@
                 "status": "Friend"
             }
         },
-        "requirements": {}
+        "requirements": {},
+        "description_key": "Invites to shelter_night"
     },
     {
         "name": "Falls on sharp rocks",
-        "description": "Tribute 1 trips and falls onto sharp rocks.",
         "usually_lethal": true,
         "num_affected": 1,
         "num_killers": 0,
@@ -123,15 +126,17 @@
         "bonus_items": {},
         "removed_items": {},
         "relation_changes": {},
-        "requirements": {}
+        "requirements": {},
+        "description_key": "Falls on sharp rocks_night"
     },
     {
         "name": "Kills self",
-        "description": "Tribute 1 sees a bleak future and kills themselves.",
         "usually_lethal": true,
         "num_affected": 1,
         "num_killers": 0,
-        "killers": ["0"],
+        "killers": [
+            "0"
+        ],
         "stats_changes": {
             "0": {
                 "health": -100
@@ -140,11 +145,11 @@
         "bonus_items": {},
         "removed_items": {},
         "relation_changes": {},
-        "requirements": {}
+        "requirements": {},
+        "description_key": "Kills self_night"
     },
     {
         "name": "Falls asleep in flower patch",
-        "description": "Tribute 1 falls asleep in a flower patch.",
         "usually_lethal": false,
         "num_affected": 1,
         "num_killers": 0,
@@ -157,11 +162,11 @@
         "bonus_items": {},
         "removed_items": {},
         "relation_changes": {},
-        "requirements": {}
+        "requirements": {},
+        "description_key": "Falls asleep in flower patch_night"
     },
     {
         "name": "Tries not to think about tomorrow",
-        "description": "Tribute 1 tries not to think about tomorrow.",
         "usually_lethal": false,
         "num_affected": 1,
         "num_killers": 0,
@@ -170,11 +175,11 @@
         "bonus_items": {},
         "removed_items": {},
         "relation_changes": {},
-        "requirements": {}
+        "requirements": {},
+        "description_key": "Tries not to think about tomorrow_night"
     },
     {
         "name": "Falls asleep standing up",
-        "description": "Tribute 1 falls asleep standing up.",
         "usually_lethal": false,
         "num_affected": 1,
         "num_killers": 0,
@@ -187,11 +192,11 @@
         "bonus_items": {},
         "removed_items": {},
         "relation_changes": {},
-        "requirements": {}
+        "requirements": {},
+        "description_key": "Falls asleep standing up_night"
     },
     {
         "name": "Stumbles in darkness",
-        "description": "Tribute 1 stumbles around in darkness.",
         "usually_lethal": false,
         "num_affected": 1,
         "num_killers": 0,
@@ -204,15 +209,17 @@
         "bonus_items": {},
         "removed_items": {},
         "relation_changes": {},
-        "requirements": {}
+        "requirements": {},
+        "description_key": "Stumbles in darkness_night"
     },
     {
         "name": "Eats a poison potato",
-        "description": "Tribute 1 eats a poison potato placed by Tribute 2.",
         "usually_lethal": true,
         "num_affected": 2,
         "num_killers": 1,
-        "killers": ["1"],
+        "killers": [
+            "1"
+        ],
         "stats_changes": {
             "0": {
                 "health": -100
@@ -220,14 +227,16 @@
         },
         "bonus_items": {},
         "removed_items": {
-            "1": ["Poisonous Potato"]
+            "1": [
+                "Poisonous Potato"
+            ]
         },
         "relation_changes": {},
-        "requirements": {}
+        "requirements": {},
+        "description_key": "Eats a poison potato_night"
     },
     {
         "name": "Bit by a bat and dies",
-        "description": "Tribute 1 gets bit by a bat and dies.",
         "usually_lethal": true,
         "num_affected": 1,
         "num_killers": 0,
@@ -240,11 +249,11 @@
         "bonus_items": {},
         "removed_items": {},
         "relation_changes": {},
-        "requirements": {}
+        "requirements": {},
+        "description_key": "Bit by a bat and dies_night"
     },
     {
         "name": "Hugs a tree",
-        "description": "Tribute 1 hugs a tree.",
         "usually_lethal": false,
         "num_affected": 1,
         "num_killers": 0,
@@ -253,11 +262,11 @@
         "bonus_items": {},
         "removed_items": {},
         "relation_changes": {},
-        "requirements": {}
+        "requirements": {},
+        "description_key": "Hugs a tree_night"
     },
     {
         "name": "Collapses from exhaustion",
-        "description": "Tribute 1 collapses from exhaustion.",
         "usually_lethal": true,
         "num_affected": 1,
         "num_killers": 0,
@@ -270,11 +279,11 @@
         "bonus_items": {},
         "removed_items": {},
         "relation_changes": {},
-        "requirements": {}
+        "requirements": {},
+        "description_key": "Collapses from exhaustion_night"
     },
     {
         "name": "Falls asleep in a ditch",
-        "description": "Tribute 1 falls asleep in a ditch.",
         "usually_lethal": false,
         "num_affected": 1,
         "num_killers": 0,
@@ -287,11 +296,11 @@
         "bonus_items": {},
         "removed_items": {},
         "relation_changes": {},
-        "requirements": {}
+        "requirements": {},
+        "description_key": "Falls asleep in a ditch_night"
     },
     {
         "name": "Sleeps with one eye open",
-        "description": "Tribute 1 sleeps with one eye open.",
         "usually_lethal": false,
         "num_affected": 1,
         "num_killers": 0,
@@ -304,11 +313,11 @@
         "bonus_items": {},
         "removed_items": {},
         "relation_changes": {},
-        "requirements": {}
+        "requirements": {},
+        "description_key": "Sleeps with one eye open_night"
     },
     {
         "name": "Nightmares about killing",
-        "description": "Tribute 1 has nightmares about Tribute 2 killing them.",
         "usually_lethal": false,
         "num_affected": 2,
         "num_killers": 0,
@@ -321,11 +330,11 @@
         "bonus_items": {},
         "removed_items": {},
         "relation_changes": {},
-        "requirements": {}
+        "requirements": {},
+        "description_key": "Nightmares about killing_night"
     },
     {
         "name": "Falls asleep to crickets",
-        "description": "Tribute 1 falls asleep to the sound of crickets.",
         "usually_lethal": false,
         "num_affected": 1,
         "num_killers": 0,
@@ -338,11 +347,11 @@
         "bonus_items": {},
         "removed_items": {},
         "relation_changes": {},
-        "requirements": {}
+        "requirements": {},
+        "description_key": "Falls asleep to crickets_night"
     },
     {
         "name": "Dreams about being a victor",
-        "description": "Tribute 1 dreams about themselves as victor.",
         "usually_lethal": false,
         "num_affected": 1,
         "num_killers": 0,
@@ -356,11 +365,11 @@
         "bonus_items": {},
         "removed_items": {},
         "relation_changes": {},
-        "requirements": {}
+        "requirements": {},
+        "description_key": "Dreams about being a victor_night"
     },
     {
         "name": "Stares at the night sky",
-        "description": "Tribute 1 stares at the night sky.",
         "usually_lethal": false,
         "num_affected": 1,
         "num_killers": 0,
@@ -369,11 +378,11 @@
         "bonus_items": {},
         "removed_items": {},
         "relation_changes": {},
-        "requirements": {}
+        "requirements": {},
+        "description_key": "Stares at the night sky_night"
     },
     {
         "name": "Imagines a better world",
-        "description": "Tribute 1 imagines a world where anyone can be anything.",
         "usually_lethal": false,
         "num_affected": 1,
         "num_killers": 0,
@@ -382,11 +391,11 @@
         "bonus_items": {},
         "removed_items": {},
         "relation_changes": {},
-        "requirements": {}
+        "requirements": {},
+        "description_key": "Imagines a better world_night"
     },
     {
         "name": "Falls asleep near a bush",
-        "description": "Tribute 1 falls asleep near a bush.",
         "usually_lethal": false,
         "num_affected": 1,
         "num_killers": 0,
@@ -399,11 +408,11 @@
         "bonus_items": {},
         "removed_items": {},
         "relation_changes": {},
-        "requirements": {}
+        "requirements": {},
+        "description_key": "Falls asleep near a bush_night"
     },
     {
         "name": "Struggles to fall asleep",
-        "description": "Tribute 1 struggles to fall asleep but manages in the end.",
         "usually_lethal": false,
         "num_affected": 1,
         "num_killers": 0,
@@ -416,11 +425,11 @@
         "bonus_items": {},
         "removed_items": {},
         "relation_changes": {},
-        "requirements": {}
+        "requirements": {},
+        "description_key": "Struggles to fall asleep_night"
     },
     {
         "name": "Lays with eyes wide open",
-        "description": "Tribute 1 lays down with eyes wide open.",
         "usually_lethal": false,
         "num_affected": 1,
         "num_killers": 0,
@@ -429,11 +438,11 @@
         "bonus_items": {},
         "removed_items": {},
         "relation_changes": {},
-        "requirements": {}
+        "requirements": {},
+        "description_key": "Lays with eyes wide open_night"
     },
     {
         "name": "Has nightmares",
-        "description": "Tribute 1 has nightmares.",
         "usually_lethal": false,
         "num_affected": 1,
         "num_killers": 0,
@@ -446,11 +455,11 @@
         "bonus_items": {},
         "removed_items": {},
         "relation_changes": {},
-        "requirements": {}
+        "requirements": {},
+        "description_key": "Has nightmares_night"
     },
     {
         "name": "Makes a bed from grass",
-        "description": "Tribute 1 makes a bed out of some grass.",
         "usually_lethal": false,
         "num_affected": 1,
         "num_killers": 0,
@@ -463,11 +472,11 @@
         "bonus_items": {},
         "removed_items": {},
         "relation_changes": {},
-        "requirements": {}
+        "requirements": {},
+        "description_key": "Makes a bed from grass_night"
     },
     {
         "name": "Keeps watch in a tree",
-        "description": "Tribute 1 keeps watch in a tree.",
         "usually_lethal": false,
         "num_affected": 1,
         "num_killers": 0,
@@ -480,6 +489,7 @@
         "bonus_items": {},
         "removed_items": {},
         "relation_changes": {},
-        "requirements": {}
+        "requirements": {},
+        "description_key": "Keeps watch in a tree_night"
     }
 ]

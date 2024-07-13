@@ -11,22 +11,18 @@
             }
         },
         "bonus_items": {
-            "1": [
-                "Flower",
-                "Flower"
-            ]
+            "1": ["Flower", "Flower"]
         },
         "removed_items": {},
         "relation_changes": {},
-        "requirements": {},
-        "description_key": "Picks flowers_day"
+        "requirements": {}
     },
     {
         "name": "Sees in the distance",
         "usually_lethal": false,
         "num_affected": 2,
         "num_killers": 0,
-        "killers": [],
+        "killers":  [],
         "stats_changes": {
             "0": {
                 "vision": 10,
@@ -36,15 +32,14 @@
         "bonus_items": {},
         "removed_items": {},
         "relation_changes": {},
-        "requirements": {},
-        "description_key": "Sees in the distance_day"
+        "requirements": {}
     },
     {
         "name": "Thinks about home",
         "usually_lethal": false,
         "num_affected": 1,
         "num_killers": 0,
-        "killers": [],
+        "killers":  [],
         "stats_changes": {
             "0": {
                 "health": -5
@@ -53,17 +48,14 @@
         "bonus_items": {},
         "removed_items": {},
         "relation_changes": {},
-        "requirements": {},
-        "description_key": "Thinks about home_day"
+        "requirements": {}
     },
     {
         "name": "Shank scenario",
         "usually_lethal": true,
         "num_affected": 2,
         "num_killers": 1,
-        "killers": [
-            "0"
-        ],
+        "killers": ["0"],
         "stats_changes": {
             "1": {
                 "health": -60
@@ -72,15 +64,14 @@
         "bonus_items": {},
         "removed_items": {},
         "relation_changes": {},
-        "requirements": {},
-        "description_key": "Shank scenario_day"
+        "requirements": {}
     },
     {
         "name": "Eats something inedible",
         "usually_lethal": false,
         "num_affected": 1,
         "num_killers": 0,
-        "killers": [],
+        "killers":  [],
         "stats_changes": {
             "0": {
                 "health": -30,
@@ -90,15 +81,14 @@
         "bonus_items": {},
         "removed_items": {},
         "relation_changes": {},
-        "requirements": {},
-        "description_key": "Eats something inedible_day"
+        "requirements": {}
     },
     {
         "name": "Talks to self",
         "usually_lethal": false,
         "num_affected": 1,
         "num_killers": 0,
-        "killers": [],
+        "killers":  [],
         "stats_changes": {
             "0": {
                 "stealth": -5
@@ -107,17 +97,14 @@
         "bonus_items": {},
         "removed_items": {},
         "relation_changes": {},
-        "requirements": {},
-        "description_key": "Talks to self_day"
+        "requirements": {}
     },
     {
         "name": "Shoots with an arrow",
         "usually_lethal": true,
         "num_affected": 2,
         "num_killers": 1,
-        "killers": [
-            "0"
-        ],
+        "killers": ["0"],
         "stats_changes": {
             "1": {
                 "health": -70
@@ -125,91 +112,83 @@
         },
         "bonus_items": {},
         "removed_items": {
-            "0": [
-                "Arrow"
-            ]
+            "0": ["Arrow"]
         },
         "relation_changes": {},
         "requirements": {
-            "0": [
-                "Bow",
-                "Arrow"
-            ]
-        },
-        "description_key": "Shoots with an arrow_day"
+            "0": {
+              "items": ["Bow", "Arrow"]
+
+            }
+
+        }
     },
     {
         "name": "Picks up medicine",
         "usually_lethal": false,
         "num_affected": 1,
         "num_killers": 0,
-        "killers": [],
+        "killers":  [],
         "stats_changes": {},
         "bonus_items": {
-            "0": [
-                "Medicine"
-            ]
+            "0": ["Medicine"]
         },
         "removed_items": {},
         "relation_changes": {},
-        "requirements": {},
-        "description_key": "Picks up medicine_day"
+        "requirements": {}
     },
     {
         "name": "Thinks about murder",
         "usually_lethal": false,
         "num_affected": 1,
         "num_killers": 0,
-        "killers": [],
+        "killers":  [],
         "stats_changes": {
-            "0": {
-                "combat_power": 5
-            }
+            "0":
+                {
+                    "combat_power": 5
+                }
         },
         "bonus_items": {},
         "removed_items": {},
         "relation_changes": {},
         "requirements": {
             "0": {
-                "stats": {
+                "stats":{
                     "health": {
                         "min": 30
                     }
                 }
             }
-        },
-        "description_key": "Thinks about murder_day"
+        }
     },
     {
         "name": "Shoots and misses",
         "usually_lethal": false,
         "num_affected": 2,
         "num_killers": 0,
-        "killers": [],
+        "killers":  [],
         "stats_changes": {},
         "bonus_items": {},
         "removed_items": {
-            "0": [
-                "Arrow"
-            ]
+            "0": {
+              "items":["Arrow"]
+            }
+
         },
         "relation_changes": {},
         "requirements": {
-            "0": [
-                "Bow",
-                "Arrow"
-            ]
-        },
-        "description_key": "Shoots and misses_day"
+            "0": {
+              "items":["Bow", "Arrow"]
+            }
+        }
     },
     {
         "name": "Removes head with broadsword",
         "usually_lethal": true,
         "num_affected": 2,
         "num_killers": 1,
-        "killers": [
-            "0"
-        ],
+        "killers": ["0"],
         "stats_changes": {
             "0": {
                 "combat_power": 10
@@ -222,20 +201,17 @@
         "removed_items": {},
         "relation_changes": {},
         "requirements": {
-            "0": [
-                "Weapon"
-            ]
-        },
-        "description_key": "Removes head with broadsword_day"
+            "0": {
+              "items": ["Weapon"]
+            }
+        }
     },
     {
         "name": "Throws a rock",
         "usually_lethal": true,
         "num_affected": 2,
         "num_killers": 1,
-        "killers": [
-            "0"
-        ],
+        "killers": ["0"],
         "stats_changes": {
             "1": {
                 "health": -30
@@ -244,15 +220,14 @@
         "bonus_items": {},
         "removed_items": {},
         "relation_changes": {},
-        "requirements": {},
-        "description_key": "Throws a rock_day"
+        "requirements": {}
     },
     {
         "name": "Steps on a landmine",
         "usually_lethal": true,
         "num_affected": 1,
         "num_killers": 0,
-        "killers": [],
+        "killers":  [],
         "stats_changes": {
             "0": {
                 "health": -100
@@ -261,15 +236,14 @@
         "bonus_items": {},
         "removed_items": {},
         "relation_changes": {},
-        "requirements": {},
-        "description_key": "Steps on a landmine_day"
+        "requirements": {}
     },
     {
         "name": "Hides in bushes",
         "usually_lethal": false,
         "num_affected": 1,
         "num_killers": 0,
-        "killers": [],
+        "killers":  [],
         "stats_changes": {
             "0": {
                 "stealth": 10
@@ -278,34 +252,28 @@
         "bonus_items": {},
         "removed_items": {},
         "relation_changes": {},
-        "requirements": {},
-        "description_key": "Hides in bushes_day"
+        "requirements": {}
     },
     {
         "name": "Receives supply drop",
         "usually_lethal": false,
         "num_affected": 1,
         "num_killers": 0,
-        "killers": [],
+        "killers":  [],
         "stats_changes": {},
         "bonus_items": {
-            "0": [
-                "Food",
-                "Water",
-                "Medicine"
-            ]
+            "0": ["Food", "Water", "Medicine"]
         },
         "removed_items": {},
         "relation_changes": {},
-        "requirements": {},
-        "description_key": "Receives supply drop_day"
+        "requirements": {}
     },
     {
         "name": "Climbs a tree and fall",
         "usually_lethal": true,
         "num_affected": 1,
         "num_killers": 0,
-        "killers": [],
+        "killers":  [],
         "stats_changes": {
             "0": {
                 "health": -80
@@ -314,15 +282,14 @@
         "bonus_items": {},
         "removed_items": {},
         "relation_changes": {},
-        "requirements": {},
-        "description_key": "Climbs a tree and fall_day"
+        "requirements": {}
     },
     {
         "name": "Tires from running",
         "usually_lethal": false,
         "num_affected": 1,
         "num_killers": 0,
-        "killers": [],
+        "killers":  [],
         "stats_changes": {
             "0": {
                 "health": -10,
@@ -333,30 +300,26 @@
         "bonus_items": {},
         "removed_items": {},
         "relation_changes": {},
-        "requirements": {},
-        "description_key": "Tires from running_day"
+        "requirements": {}
     },
     {
         "name": "Begs for mercy and allowed",
         "usually_lethal": false,
         "num_affected": 2,
         "num_killers": 0,
-        "killers": [],
+        "killers":  [],
         "stats_changes": {},
         "bonus_items": {},
         "removed_items": {},
         "relation_changes": {},
-        "requirements": {},
-        "description_key": "Begs for mercy and allowed_day"
+        "requirements": {}
     },
     {
         "name": "Begs for mercy and killed",
         "usually_lethal": true,
         "num_affected": 2,
         "num_killers": 1,
-        "killers": [
-            "1"
-        ],
+        "killers": ["1"],
         "stats_changes": {
             "0": {
                 "health": -100
@@ -365,15 +328,14 @@
         "bonus_items": {},
         "removed_items": {},
         "relation_changes": {},
-        "requirements": {},
-        "description_key": "Begs for mercy and killed_day"
+        "requirements": {}
     },
     {
         "name": "Bit by a savage rabbit",
         "usually_lethal": false,
         "num_affected": 1,
         "num_killers": 0,
-        "killers": [],
+        "killers":  [],
         "stats_changes": {
             "0": {
                 "health": -15
@@ -382,15 +344,14 @@
         "bonus_items": {},
         "removed_items": {},
         "relation_changes": {},
-        "requirements": {},
-        "description_key": "Bit by a savage rabbit_day"
+        "requirements": {}
     },
     {
         "name": "Activates tripwire and dies",
         "usually_lethal": true,
         "num_affected": 1,
         "num_killers": 0,
-        "killers": [],
+        "killers":  [],
         "stats_changes": {
             "0": {
                 "health": -100
@@ -399,17 +360,14 @@
         "bonus_items": {},
         "removed_items": {},
         "relation_changes": {},
-        "requirements": {},
-        "description_key": "Activates tripwire and dies_day"
+        "requirements": {}
     },
     {
         "name": "Strangles to death",
         "usually_lethal": true,
         "num_affected": 2,
         "num_killers": 1,
-        "killers": [
-            "0"
-        ],
+        "killers": ["0"],
         "stats_changes": {
             "1": {
                 "health": -100
@@ -418,41 +376,36 @@
         "bonus_items": {},
         "removed_items": {},
         "relation_changes": {},
-        "requirements": {},
-        "description_key": "Strangles to death_day"
+        "requirements": {}
     },
     {
         "name": "Poisons a potato",
         "usually_lethal": false,
         "num_affected": 1,
         "num_killers": 0,
-        "killers": [],
+        "killers":  [],
         "stats_changes": {},
         "bonus_items": {
-            "0": [
-                "Poisoned Potato"
-            ]
+            "0": ["Poisoned Potato"]
         },
         "removed_items": {},
         "relation_changes": {},
-        "requirements": {},
-        "description_key": "Poisons a potato_day"
+        "requirements": {}
     },
     {
         "name": "Carves initials into a tree",
         "usually_lethal": false,
         "num_affected": 1,
         "num_killers": 0,
-        "killers": [],
+        "killers":  [],
         "stats_changes": {},
         "bonus_items": {},
         "removed_items": {},
         "relation_changes": {},
-        "requirements": {},
-        "description_key": "Carves initials into a tree_day"
+        "requirements": {}
     },
     {
-        "name": "Swordfight with outcomes based on injuries",
+        "name": "Swordfight",
         "usually_lethal": true,
         "num_affected": 2,
         "num_killers": 1,
@@ -468,8 +421,7 @@
         "bonus_items": {},
         "removed_items": {},
         "relation_changes": {},
-        "requirements": {},
-        "description_key": "Swordfight with outcomes based on injuries_day"
+        "requirements": {}
     },
     {
         "name": "Caves skull in with a club",
@@ -488,15 +440,14 @@
         "bonus_items": {},
         "removed_items": {},
         "relation_changes": {},
-        "requirements": {},
-        "description_key": "Caves skull in with a club_day"
+        "requirements": {}
     },
     {
         "name": "Thinks about the human condition",
         "usually_lethal": false,
         "num_affected": 1,
         "num_killers": 0,
-        "killers": [],
+        "killers":  [],
         "stats_changes": {
             "0": {
                 "charisma": 1
@@ -505,8 +456,7 @@
         "bonus_items": {},
         "removed_items": {},
         "relation_changes": {},
-        "requirements": {},
-        "description_key": "Thinks about the human condition_day"
+        "requirements": {}
     },
     {
         "name": "Finds corpse or mortally wounded",
@@ -522,34 +472,31 @@
         "bonus_items": {},
         "removed_items": {},
         "relation_changes": {},
-        "requirements": {},
-        "description_key": "Finds corpse or mortally wounded_day"
+        "requirements": {}
     },
     {
         "name": "Nearly steps on a landmine",
         "usually_lethal": false,
         "num_affected": 1,
         "num_killers": 0,
-        "killers": [],
+        "killers":  [],
         "stats_changes": {},
         "bonus_items": {},
         "removed_items": {},
         "relation_changes": {},
-        "requirements": {},
-        "description_key": "Nearly steps on a landmine_day"
+        "requirements": {}
     },
     {
         "name": "Creepily watches",
         "usually_lethal": false,
         "num_affected": 2,
         "num_killers": 0,
-        "killers": [],
+        "killers":  [],
         "stats_changes": {},
         "bonus_items": {},
         "removed_items": {},
         "relation_changes": {},
-        "requirements": {},
-        "description_key": "Creepily watches_day"
+        "requirements": {}
     },
     {
         "name": "Stabs in the heart",
@@ -568,15 +515,14 @@
         "bonus_items": {},
         "removed_items": {},
         "relation_changes": {},
-        "requirements": {},
-        "description_key": "Stabs in the heart_day"
+        "requirements": {}
     },
     {
         "name": "Various actions",
         "usually_lethal": false,
         "num_affected": 1,
         "num_killers": 0,
-        "killers": [],
+        "killers":  [],
         "stats_changes": {
             "0": {
                 "combat_power": 20
@@ -585,41 +531,38 @@
         "bonus_items": {},
         "removed_items": {},
         "relation_changes": {},
-        "requirements": {},
-        "description_key": "Various actions_day"
+        "requirements": {}
     },
     {
         "name": "Punches a leaf",
         "usually_lethal": false,
         "num_affected": 1,
         "num_killers": 0,
-        "killers": [],
+        "killers":  [],
         "stats_changes": {},
         "bonus_items": {},
         "removed_items": {},
         "relation_changes": {},
-        "requirements": {},
-        "description_key": "Punches a leaf_day"
+        "requirements": {}
     },
     {
         "name": "Pisses in a bush",
         "usually_lethal": false,
         "num_affected": 1,
         "num_killers": 0,
-        "killers": [],
+        "killers":  [],
         "stats_changes": {},
         "bonus_items": {},
         "removed_items": {},
         "relation_changes": {},
-        "requirements": {},
-        "description_key": "Pisses in a bush_day"
+        "requirements": {}
     },
     {
         "name": "Looks for food but fail",
         "usually_lethal": false,
         "num_affected": 1,
         "num_killers": 0,
-        "killers": [],
+        "killers":  [],
         "stats_changes": {
             "0": {
                 "hunger": -20
@@ -628,32 +571,28 @@
         "bonus_items": {},
         "removed_items": {},
         "relation_changes": {},
-        "requirements": {},
-        "description_key": "Looks for food but fail_day"
+        "requirements": {}
     },
     {
         "name": "Looks for food and succeed",
         "usually_lethal": false,
         "num_affected": 1,
         "num_killers": 0,
-        "killers": [],
+        "killers":  [],
         "stats_changes": {},
         "bonus_items": {
-            "0": [
-                "Food"
-            ]
+            "0": ["Food"]
         },
         "removed_items": {},
         "relation_changes": {},
-        "requirements": {},
-        "description_key": "Looks for food and succeed_day"
+        "requirements": {}
     },
     {
         "name": "Tripwire scenario",
         "usually_lethal": false,
         "num_affected": 1,
         "num_killers": 0,
-        "killers": [],
+        "killers":  [],
         "stats_changes": {
             "0": {
                 "health": -30
@@ -662,15 +601,14 @@
         "bonus_items": {},
         "removed_items": {},
         "relation_changes": {},
-        "requirements": {},
-        "description_key": "Tripwire scenario_day"
+        "requirements": {}
     },
     {
         "name": "Exploring",
         "usually_lethal": false,
         "num_affected": 1,
         "num_killers": 0,
-        "killers": [],
+        "killers":  [],
         "stats_changes": {
             "0": {
                 "vision": 15
@@ -679,19 +617,18 @@
         "bonus_items": {},
         "removed_items": {},
         "relation_changes": {},
-        "requirements": {},
-        "description_key": "Exploring_day"
+        "requirements": {}
     },
     {
         "name": "Sings songs together",
         "usually_lethal": false,
         "num_affected": 2,
         "num_killers": 0,
-        "killers": [],
+        "killers":  [],
         "stats_changes": {},
         "bonus_items": {},
         "removed_items": {},
-        "relation_changes": {
+                "relation_changes": {
             "0": {
                 "target": 1,
                 "status": "Friend"
@@ -701,15 +638,14 @@
                 "status": "Friend"
             }
         },
-        "requirements": {},
-        "description_key": "Sings songs together_day"
+        "requirements": {}
     },
     {
         "name": "Tries to eat tree bark",
         "usually_lethal": false,
         "num_affected": 1,
         "num_killers": 0,
-        "killers": [],
+        "killers":  [],
         "stats_changes": {
             "0": {
                 "hunger": -10
@@ -718,17 +654,14 @@
         "bonus_items": {},
         "removed_items": {},
         "relation_changes": {},
-        "requirements": {},
-        "description_key": "Tries to eat tree bark_day"
+        "requirements": {}
     },
     {
         "name": "Smacks with a yardstick",
         "usually_lethal": false,
         "num_affected": 2,
         "num_killers": 0,
-        "killers": [
-            "0"
-        ],
+        "killers":  ["0"],
         "stats_changes": {
             "1": {
                 "health": -10
@@ -737,11 +670,311 @@
         "bonus_items": {},
         "removed_items": {},
         "relation_changes": {},
-        "requirements": {},
-        "description_key": "Smacks with a yardstick_day"
+        "requirements": {}
     },
     {
         "name": "Finds bow and arrow",
+        "usually_lethal": false,
+        "num_affected": 1,
+        "num_killers": 0,
+        "killers":  [],
+        "stats_changes": {},
+        "bonus_items": {
+            "0": ["Bow", "Arrow", "Arrow", "Arrow"]
+        },
+        "removed_items": {},
+        "relation_changes": {},
+        "requirements": {}
+    },
+
+    {
+    "name": "Sets a Trap",
+    "usually_lethal": false,
+    "num_affected": 1,
+    "num_killers": 0,
+    "killers": [],
+    "stats_changes": {
+      "0": {
+        "stealth": 5
+      }
+    },
+    "bonus_items": {
+      "0": ["Snare"]
+    },
+    "removed_items": {},
+    "relation_changes": {},
+    "requirements": {}
+  },
+  {
+    "name": "Scavenges for Supplies",
+    "usually_lethal": false,
+    "num_affected": 1,
+    "num_killers": 0,
+    "killers": [],
+    "stats_changes": {
+      "0": {
+        "hunger": -10,
+        "thirst": -15
+      }
+    },
+    "bonus_items": {
+      "0": [
+        "Food",
+        "Water",
+        "Medicine",
+        "Knife",
+        "Rope",
+        "Backpack",
+        "Camouflage Paint"
+      ]
+    },
+    "removed_items": {},
+    "relation_changes": {},
+    "requirements": {}
+  },
+  {
+    "name": "Camouflages Themselves",
+    "usually_lethal": false,
+    "num_affected": 1,
+    "num_killers": 0,
+    "killers": [],
+    "stats_changes": {
+      "0": {
+        "stealth": 15
+      }
+    },
+    "bonus_items": {},
+    "removed_items": {
+      "0": ["Camouflage Paint"]
+    },
+    "relation_changes": {},
+    "requirements": {
+      "0": {
+        "items": ["Camouflage Paint"]
+      }
+    }
+  },
+  {
+    "name": "Makes an Alliance",
+    "usually_lethal": false,
+    "num_affected": 2,
+    "num_killers": 0,
+    "killers": [],
+    "stats_changes": {},
+    "bonus_items": {},
+    "removed_items": {},
+    "relation_changes": {
+      "0": {
+        "target": 1,
+        "status": "Ally"
+      },
+      "1": {
+        "target": 0,
+        "status": "Ally"
+      }
+    },
+    "requirements": {}
+  },
+  {
+    "name": "Betrays an Ally",
+    "usually_lethal": true,
+    "num_affected": 2,
+    "num_killers": 1,
+    "killers": ["0"],
+    "stats_changes": {
+      "1": {
+        "health": -100
+      }
+    },
+    "bonus_items": {},
+    "removed_items": {},
+    "relation_changes": {
+      "0": {
+        "target": 1,
+        "status": "Enemy"
+      }
+    },
+    "requirements": {
+      "0": {
+        "relations": {
+          "1": "Ally"
+        }
+      }
+    }
+  },
+  {
+    "name": "Sends a Smoke Signal",
+    "usually_lethal": false,
+    "num_affected": 1,
+    "num_killers": 0,
+    "killers": [],
+    "stats_changes": {},
+    "bonus_items": {},
+    "removed_items": {
+      "0": ["Fire Starter"]
+    },
+    "relation_changes": {},
+    "requirements": {
+      "0": {
+        "items": ["Fire Starter"]
+      }
+    }
+  },
+  {
+    "name": "Crafts a Weapon",
+    "usually_lethal": false,
+    "num_affected": 1,
+    "num_killers": 0,
+    "killers": [],
+    "stats_changes": {
+      "0": {
+        "combat_power": 10
+      }
+    },
+    "bonus_items": {
+      "0": ["Spear"]
+    },
+    "removed_items": {
+      "0": ["Knife", "Stick"]
+    },
+    "relation_changes": {},
+    "requirements": {
+      "0": {
+        "items": ["Knife", "Stick"]
+      }
+    }
+  },
+    {
+        "name": "Forages for Edible Plants",
+        "usually_lethal": false,
+        "num_affected": 1,
+        "num_killers": 0,
+        "killers": [],
+        "stats_changes": {
+            "0": {
+                "hunger": -10,
+                "thirst": -5
+            }
+        },
+        "bonus_items": {
+            "0": ["Berries", "Roots"]
+        },
+        "removed_items": {},
+        "relation_changes": {},
+        "requirements": {}
+    },
+    {
+        "name": "Practices with a Found Weapon",
+        "usually_lethal": false,
+        "num_affected": 1,
+        "num_killers": 0,
+        "killers": [],
+        "stats_changes": {
+            "0": {
+                "combat_power": 5
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {},
+        "requirements": {
+            "0": {
+                "items": ["Weapon"]
+            }
+        }
+    },
+    {
+        "name": "Treats Wounds with Herbs",
+        "usually_lethal": false,
+        "num_affected": 1,
+        "num_killers": 0,
+        "killers": [],
+        "stats_changes": {
+            "0": {
+                "health": 15
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {
+            "0": ["Herbs"]
+        },
+        "relation_changes": {},
+        "requirements": {
+            "0": {
+                "items": ["Herbs"]
+            }
+        }
+    },
+    {
+        "name": "Drinks from a Stream",
+        "usually_lethal": false,
+        "num_affected": 1,
+        "num_killers": 0,
+        "killers": [],
+        "stats_changes": {
+            "0": {
+                "thirst": 20,
+                "health": -5
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {},
+        "requirements": {}
+    },
+    {
+        "name": "Hunts with an Ally",
+        "usually_lethal": true,
+        "num_affected": 2,
+        "num_killers": 1,
+        "killers": ["0", "1"],
+        "stats_changes": {
+            "0": {
+                "hunger": -10,
+                "thirst": -15
+            },
+            "1": {
+                "hunger": -10,
+                "thirst": -15
+            }
+        },
+        "bonus_items": {
+            "0": ["Meat"],
+            "1": ["Meat"]
+        },
+        "removed_items": {},
+        "relation_changes": {},
+        "requirements": {
+            "0": {
+                "relations": {
+                    "1": "Ally"
+                }
+            }
+        }
+    },
+    {
+        "name": "Steals from a Sleeping Tribute",
+        "usually_lethal": false,
+        "num_affected": 2,
+        "num_killers": 0,
+        "killers": [],
+        "stats_changes": {},
+        "bonus_items": {
+            "0": ["Stolen Item"]
+        },
+        "removed_items": {
+            "1": ["Any"]
+        },
+        "relation_changes": {
+            "0": {
+                "target": 1,
+                "status": "Enemy"
+            }
+        },
+        "requirements": {}
+    },
+    {
+        "name": "Finds a Sponsor Gift",
         "usually_lethal": false,
         "num_affected": 1,
         "num_killers": 0,
@@ -749,15 +982,180 @@
         "stats_changes": {},
         "bonus_items": {
             "0": [
-                "Bow",
-                "Arrow",
-                "Arrow",
-                "Arrow"
+                "Bread",
+                "Water Bottle",
+                "Bandages",
+                "Small Knife",
+                "Sleeping Bag",
+                "Iodine Tablets"
             ]
         },
         "removed_items": {},
         "relation_changes": {},
-        "requirements": {},
-        "description_key": "Finds bow and arrow_day"
+        "requirements": {
+            "0": {
+                "stats": {
+                    "charisma": { "min": 60 }
+                }
+            }
+        }
+    },
+    {
+        "name": "Suffers from Heat Exhaustion",
+        "usually_lethal": false,
+        "num_affected": 1,
+        "num_killers": 0,
+        "killers": [],
+        "stats_changes": {
+            "0": {
+                "health": -20,
+                "thirst": -30
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {},
+        "requirements": {}
+    },
+    {
+        "name": "Climbs for a Better View",
+        "usually_lethal": false,
+        "num_affected": 1,
+        "num_killers": 0,
+        "killers": [],
+        "stats_changes": {
+            "0": {
+                "vision": 10,
+                "hunger": -5,
+                "thirst": -5
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {},
+        "requirements": {}
+    },
+    {
+        "name": "Mourns a Fallen Tribute",
+        "usually_lethal": false,
+        "num_affected": 1,
+        "num_killers": 0,
+        "killers": [],
+        "stats_changes": {
+            "0": {
+                "charisma": 5,
+                "health": -5
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {},
+        "requirements": {}
+    },
+    {
+        "name": "Sets a Diversion",
+        "usually_lethal": false,
+        "num_affected": 1,
+        "num_killers": 0,
+        "killers": [],
+        "stats_changes": {
+            "0": {
+                "stealth": 10
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {
+            "0": ["Fire Starter"]
+        },
+        "relation_changes": {},
+        "requirements": {
+            "0": {
+                "items": ["Fire Starter"]
+            }
+        }
+    },
+    {
+        "name": "Fishes in a River",
+        "usually_lethal": false,
+        "num_affected": 1,
+        "num_killers": 0,
+        "killers": [],
+        "stats_changes": {
+            "0": {
+                "hunger": -15
+            }
+        },
+        "bonus_items": {
+            "0": ["Fish"]
+        },
+        "removed_items": {},
+        "relation_changes": {},
+        "requirements": {
+            "0": {
+                "items": ["Spear"]
+            }
+        }
+    },
+    {
+        "name": "Stumbles Upon a Muttation",
+        "usually_lethal": true,
+        "num_affected": 1,
+        "num_killers": 0,
+        "killers": [],
+        "stats_changes": {
+            "0": {
+                "health": -50
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {},
+        "requirements": {}
+    },
+    {
+        "name": "Receives Medical Attention from Hovercraft",
+        "usually_lethal": false,
+        "num_affected": 1,
+        "num_killers": 0,
+        "killers": [],
+        "stats_changes": {
+            "0": {
+                "health": 30
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {},
+        "requirements": {
+            "0": {
+                "stats": {
+                    "health": { "max": 30 }
+                }
+            }
+        }
+    },
+    {
+        "name": "Trains with a Mentor Figure",
+        "usually_lethal": false,
+        "num_affected": 2,
+        "num_killers": 0,
+        "killers": [],
+        "stats_changes": {
+            "0": {
+                "combat_power": 10,
+                "stealth": 5
+            },
+            "1": { "health": -5 }
+        },
+        "bonus_items": {},
+        "removed_items": {},
+        "relation_changes": {},
+        "requirements": {
+            "0": {
+                "relations": {
+                    "1": "Ally"
+                }
+            }
+        }
     }
 ]
