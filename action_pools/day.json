@@ -459,7 +459,7 @@
         "requirements": {}
     },
     {
-        "name": "Finds corpse or mortally wounded",
+        "name": "Mortally wounded",
         "usually_lethal": true,
         "num_affected": 2,
         "num_killers": 1,
@@ -1155,6 +1155,248 @@
                 "relations": {
                     "1": "Ally"
                 }
+            }
+        }
+    },
+  {
+    "name": "Opportunistic Ambush",
+    "usually_lethal": true,
+    "num_affected": 2,
+    "num_killers": 1,
+    "killers": ["0"],
+    "stats_changes": {
+      "1": {
+        "health": -100
+      }
+    },
+    "bonus_items": {},
+    "removed_items": {},
+    "relation_changes": {},
+    "requirements": {
+      "0": {
+        "stats": {
+          "stealth": {
+            "min": 60
+          }
+        },
+        "items": [
+          "Weapon"
+        ]
+      },
+      "1": {
+        "stats": {
+          "health": {
+            "max": 50
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Brutal Beatdown",
+    "usually_lethal": true,
+    "num_affected": 2,
+    "num_killers": 1,
+    "killers": ["0"],
+    "stats_changes": {
+      "0": {
+        "combat_power": 15
+      },
+      "1": {
+        "health": -100
+      }
+    },
+    "bonus_items": {},
+    "removed_items": {},
+    "relation_changes": {},
+    "requirements": {
+      "0": {
+        "stats": {
+          "combat_power": {
+            "min": 70
+          }
+        },
+        "items": [
+          "Weapon"
+        ]
+      }
+    }
+  },
+  {
+    "name": "Forced Mercy",
+    "usually_lethal": false,
+    "num_affected": 2,
+    "num_killers": 0,
+    "killers": [],
+    "stats_changes": {},
+    "bonus_items": {},
+    "removed_items": {},
+    "relation_changes": {
+      "0": {
+        "target": 1,
+        "status": "Enemy"
+      },
+      "1": {
+        "target": 0,
+        "status": "Neutral"
+      }
+    },
+    "requirements": {
+      "0": {
+        "items": [
+          "Weapon"
+        ]
+      },
+      "1": {
+        "stats": {
+          "health": {
+            "max": 30
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Shared Hunt",
+    "usually_lethal": true,
+    "num_affected": 3,
+    "num_killers": 2,
+    "killers": ["0", "1"],
+    "stats_changes": {
+      "0": {
+        "hunger": -20
+      },
+      "1": {
+        "hunger": -20
+      },
+      "2": {
+        "health": -100
+      }
+    },
+    "bonus_items": {
+      "0": ["Meat"],
+      "1": ["Meat"]
+    },
+    "removed_items": {},
+    "relation_changes": {},
+    "requirements": {
+      "0": {
+        "relations": {
+          "1": "Ally"
+        },
+        "items": ["Weapon"]
+      },
+      "1": {
+        "items": ["Weapon"]
+      }
+    }
+  },
+  {
+    "name": "Failed Raid",
+    "usually_lethal": true,
+    "num_affected": 5,
+    "num_killers": 3,
+    "killers": ["2", "3", "4"],
+    "stats_changes": {
+      "0": {
+        "health": -50
+      },
+      "1": {
+        "health": -50
+      },
+      "2": {
+        "combat_power": 5
+      },
+      "3": {
+        "combat_power": 5
+      },
+      "4": {
+        "combat_power": 5
+      }
+    },
+    "bonus_items": {},
+    "removed_items": {},
+    "relation_changes": {
+      "0": {
+        "target": 1,
+        "status": "Ally"
+      },
+      "1": {
+        "target": 0,
+        "status": "Ally"
+      }
+    },
+    "requirements": {
+      "0": {
+        "relations": {
+          "1": "Ally"
+        }
+      }
+    }
+  },
+      {
+        "name": "Successful Snare",
+        "usually_lethal": true,
+        "num_affected": 2,
+        "num_killers": 1,
+        "killers": ["0"],
+        "stats_changes": {
+            "1": {
+                "health": -100
+            }
+        },
+        "bonus_items": {
+            "0": ["Meat"]
+        },
+        "removed_items": {
+            "0": ["Snare"]
+        },
+        "relation_changes": {},
+        "requirements": {
+            "0": {
+                "items": ["Snare"]
+            }
+        }
+    },
+    {
+        "name": "Careless Fire",
+        "usually_lethal": false,
+        "num_affected": 1,
+        "num_killers": 0,
+        "killers": [],
+        "stats_changes": {
+            "0": {
+                "health": -20
+            }
+        },
+        "bonus_items": {},
+        "removed_items": {
+            "0": ["Fire Starter"]
+        },
+        "relation_changes": {},
+        "requirements": {
+            "0": {
+                "items": ["Fire Starter"]
+            }
+        }
+    },
+    {
+        "name": "Resourceful Crafting",
+        "usually_lethal": false,
+        "num_affected": 1,
+        "num_killers": 0,
+        "killers": [],
+        "stats_changes": {},
+        "bonus_items": {
+            "0": ["Water Bottle", "Bandages"]
+        },
+        "removed_items": {
+            "0": ["Backpack", "First Aid Kit"]
+        },
+        "relation_changes": {},
+        "requirements": {
+            "0": {
+                "items": ["Backpack", "First Aid Kit"]
             }
         }
     }

@@ -44,6 +44,6 @@ def create_language_files_and_update_pools(action_pool_files, output_dir):
 action_pool_files = ['day.json', 'night.json']  # Add other action pool files here
 
 # Directory to save language files
-output_dir = 'language_files'
+output_dir = '../language_files'
 
 create_language_files_and_update_pools(action_pool_files, output_dir)

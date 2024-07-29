@@ -336,5 +336,48 @@
         },
         "Tends to Their Injuries": {
             "Tends to Their Injuries_night": "Under the dim moonlight, Tribute 1 carefully tends to their injuries."
-        }
-    }
+        },
+
+    "Opportunistic Ambush": {
+        "Opportunistic Ambush_day": "Tribute 1, seeing Tribute 2 weakened, seizes the opportunity for a brutal attack!"
+    },
+    "Brutal Beatdown": {
+        "Brutal Beatdown_day": "Tribute 1 engages in a ferocious fight with Tribute 2, leaving no room for mercy!"
+    },
+    "Forced Mercy": {
+        "Forced Mercy_day": "Tribute 1 stands over the injured Tribute 2, choosing to spare their life for now."
+    },
+    "Shared Hunt": {
+        "Shared Hunt_day": "Working together, Tribute 1 and Tribute 2 bring down Tribute 3 for a much-needed meal."
+    },
+    "Failed Raid": {
+        "Failed Raid_day": "Tribute 1 and Tribute 2's attempt to raid another camp backfires disastrously when they are ambushed by Tribute 3, Tribute 4, and Tribute 5!"
+    },
+    "Night Watch Betrayal": {
+        "Night Watch Betrayal_night": "As Tribute 2 sleeps, trusting Tribute 1 to keep watch,  Tribute 1 makes a chilling decision..."
+    },
+    "Sleepless Suspicion": {
+        "Sleepless Suspicion_night": "Tribute 1 and Tribute 2, both kept awake by paranoia, eye each other nervously throughout the night."
+    },
+    "Comforting Presence": {
+        "Comforting Presence_night": "Finding solace in each other's company, Tribute 1 and Tribute 2 share a comforting silence."
+    },
+    "Whispered Confessions": {
+        "Whispered Confessions_night": "Under the veil of darkness, Tribute 1 and Tribute 2 reveal their deepest fears and secrets, forging a bond of trust."
+    },
+    "Successful Snare": {
+    "Successful Snare_day": "Tribute 1's snare traps Tribute 2, providing a gruesome but necessary meal."
+  },
+  "Careless Fire": {
+    "Careless Fire_day": "Tribute 1, attempting to start a fire, suffers burns due to carelessness."
+  },
+  "Resourceful Crafting": {
+    "Resourceful Crafting_day": "Using their backpack and first aid kit, Tribute 1 crafts a water bottle and bandages."
+  },
+  "Stolen Provisions": {
+    "Stolen Provisions_night": "Under the cover of darkness, Tribute 1 pilfers food and water from Tribute 2's dwindling supplies."
+  },
+  "Gift Offering": {
+    "Gift Offering_night": "Seeing Tribute 2's injuries, Tribute 1 offers them precious medicine as a gesture of goodwill."
+  }
+}

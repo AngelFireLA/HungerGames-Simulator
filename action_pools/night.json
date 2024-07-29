@@ -837,5 +837,192 @@
                 "items": ["Bandages", "Medicine"]
             }
         }
+    },
+  {
+    "name": "Night Watch Betrayal",
+    "usually_lethal": true,
+    "num_affected": 2,
+    "num_killers": 1,
+    "killers": ["0"],
+    "stats_changes": {
+      "1": {
+        "health": -100
+      }
+    },
+    "bonus_items": {},
+    "removed_items": {},
+    "relation_changes": {
+      "0": {
+        "target": 1,
+        "status": "Enemy"
+      }
+    },
+    "requirements": {
+      "0": {
+        "items": [
+          "Weapon"
+        ]
+      },
+      "1": {
+        "stats": {
+          "health": {
+            "max": 40
+          }
+        }
+      }
     }
+  },
+  {
+    "name": "Sleepless Suspicion",
+    "usually_lethal": false,
+    "num_affected": 2,
+    "num_killers": 0,
+    "killers": [],
+    "stats_changes": {
+      "0": {
+        "health": -5
+      },
+      "1": {
+        "health": -5
+      }
+    },
+    "bonus_items": {},
+    "removed_items": {},
+    "relation_changes": {
+      "0": {
+        "target": 1,
+        "status": "Neutral"
+      },
+      "1": {
+        "target": 0,
+        "status": "Neutral"
+      }
+    },
+    "requirements": {}
+  },
+  {
+    "name": "Comforting Presence",
+    "usually_lethal": false,
+    "num_affected": 2,
+    "num_killers": 0,
+    "killers": [],
+    "stats_changes": {
+      "0": {
+        "health": 5
+      },
+      "1": {
+        "health": 5
+      }
+    },
+    "bonus_items": {},
+    "removed_items": {},
+    "relation_changes": {
+      "0": {
+        "target": 1,
+        "status": "Friend"
+      },
+      "1": {
+        "target": 0,
+        "status": "Friend"
+      }
+    },
+    "requirements": {
+      "0": {
+        "relations": {
+          "1": "Friend"
+        }
+      }
+    }
+  },
+  {
+    "name": "Whispered Confessions",
+    "usually_lethal": false,
+    "num_affected": 2,
+    "num_killers": 0,
+    "killers": [],
+    "stats_changes": {},
+    "bonus_items": {},
+    "removed_items": {},
+    "relation_changes": {
+      "0": {
+        "target": 1,
+        "status": "Ally"
+      },
+      "1": {
+        "target": 0,
+        "status": "Ally"
+      }
+    },
+    "requirements": {
+      "0": {
+        "relations": {
+          "1": "Friend"
+        }
+      }
+    }
+  },
+    {
+    "name": "Stolen Provisions",
+    "usually_lethal": false,
+    "num_affected": 2,
+    "num_killers": 0,
+    "killers": [],
+    "stats_changes": {},
+    "bonus_items": {
+        "0": ["Food", "Water"]
+    },
+    "removed_items": {
+        "1": ["Food", "Water"]
+    },
+    "relation_changes": {
+        "1": {
+            "target": 0,
+            "status": "Enemy"
+        }
+    },
+    "requirements": {
+      "0": {
+        "stats": {
+          "stealth": {
+            "min": 60
+          }
+        }
+      },
+      "1": {
+        "items": ["Food", "Water"]
+      }
+    }
+  },
+  {
+    "name": "Gift Offering",
+    "usually_lethal": false,
+    "num_affected": 2,
+    "num_killers": 0,
+    "killers": [],
+    "stats_changes": {},
+    "bonus_items": {
+        "1": ["Medicine"]
+    },
+    "removed_items": {
+        "0": ["Medicine"]
+    },
+    "relation_changes": {
+        "1": {
+            "target": 0,
+            "status": "Friend"
+        }
+    },
+    "requirements": {
+        "0": {
+            "items": ["Medicine"]
+        },
+        "1": {
+            "stats": {
+                "health": {
+                    "max": 50
+                }
+            }
+        }
+    }
+  }
 ]

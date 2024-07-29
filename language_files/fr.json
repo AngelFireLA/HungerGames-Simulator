@@ -4,7 +4,7 @@
         "Picks flowers_night": "Tribute 1 cueille des fleurs après avoir regardé le ciel nocturne."
     },
     "Sees in the distance": {
-        "Sees in the distance_day": "Tribute 1 voit Tribute 2 au loin mais les ignore pour l'instant."
+        "Sees in the distance_day": "Tribute 1 voit Tribute 2 au loin mais l'ignore pour l'instant."
     },
     "Thinks about home": {
         "Thinks about home_day": "Tribute 1 pense à la maison."
@@ -81,8 +81,8 @@
     "Thinks about the human condition": {
         "Thinks about the human condition_day": "Tribute 1 réfléchit à la condition humaine."
     },
-    "Finds corpse or mortally wounded": {
-        "Finds corpse or mortally wounded_day": "Tribute 1 trouve un cadavre ou est mortellement blessé par Tribute 2."
+    "Mortally wounded": {
+        "Mortally wounded_day": "Tribute 1 est mortellement blessé par Tribute 2."
     },
     "Nearly steps on a landmine": {
         "Nearly steps on a landmine_day": "Tribute 1 manque de marcher sur une mine terrestre."
@@ -121,7 +121,7 @@
         "Tries to eat tree bark_day": "Tribute 1 essaie de manger de l'écorce d'arbre. Ce n'est pas bon."
     },
     "Smacks with a yardstick": {
-        "Smacks with a yardstick_day": "Tribute 1 frappe Tribute 2 avec un mètre."
+        "Smacks with a yardstick_day": "Tribute 1 frappe Tribute 2 avec une épée en bois."
     },
     "Finds bow and arrow": {
         "Finds bow and arrow_day": "Tribute 1 trouve un paquet de ravitaillement contenant un arc et quelques flèches."
@@ -325,7 +325,7 @@
     "Stares into the Fire, Lost in Thought_night": "Tribute 1 fixe le feu, perdu dans ses pensées sur son destin dans les Jeux."
   },
   "Slips While Climbing and Falls": {
-    "Slips While Climbing and Falls_night": "Un faux pas tragique conduit à la mort de Tribute 1 qui chute en grimpant dans le noir."
+    "Slips While Climbing and Falls_night": "Un faux pas tragique conduit presque à la mort de Tribute 1 qui chute en grimpant dans le noir."
   },
   "Sings a Lullaby to Themselves": {
     "Sings a Lullaby to Themselves_night": "Trouvant du réconfort dans ce qui lui est familier, Tribute 1 se chante une berceuse."
@@ -335,5 +335,47 @@
   },
   "Tends to Their Injuries": {
     "Tends to Their Injuries_night": "Sous la faible lumière de la lune, Tribute 1 soigne soigneusement ses blessures."
+  },
+      "Opportunistic Ambush": {
+        "Opportunistic Ambush_day": "Voyant Tribute 2 affaibli, Tribute 1 saisit l'occasion pour une attaque brutale !"
+    },
+    "Brutal Beatdown": {
+        "Brutal Beatdown_day": "Tribute 1 engage un combat féroce avec Tribute 2, sans aucune pitié !"
+    },
+    "Forced Mercy": {
+        "Forced Mercy_day": "Debout devant Tribute 2 blessé, Tribute 1 choisit d'épargner sa vie pour le moment."
+    },
+    "Shared Hunt": {
+        "Shared Hunt_day": "Travaillant ensemble, Tribute 1 et Tribute 2 abattent Tribute 3 pour un repas bien nécessaire."
+    },
+    "Failed Raid": {
+        "Failed Raid_day": "La tentative de Tribute 1 et Tribute 2 de prendre d'assaut un autre campement se retourne contre eux lorsqu'ils sont pris en embuscade par Tribute 3, Tribute 4 et Tribute 5 !"
+    },
+    "Night Watch Betrayal": {
+        "Night Watch Betrayal_night": "Alors que Tribute 2 dort, faisant confiance à Tribute 1 pour la garde, Tribute 1 prend une décision effrayante..."
+    },
+    "Sleepless Suspicion": {
+        "Sleepless Suspicion_night": "Tribute 1 et Tribute 2, tous deux tenus éveillés par la paranoïa, se regardent nerveusement tout au long de la nuit."
+    },
+    "Comforting Presence": {
+        "Comforting Presence_night": "Trouvant du réconfort dans la compagnie de l'autre, Tribute 1 et Tribute 2 partagent un silence réconfortant."
+    },
+    "Whispered Confessions": {
+        "Whispered Confessions_night": "Sous le voile de la nuit, Tribute 1 et Tribute 2 révèlent leurs peurs et leurs secrets les plus profonds, forgeant un lien de confiance."
+    },
+    "Successful Snare": {
+    "Successful Snare_day": "Le piège de Tribute 1 attrape Tribute 2, fournissant un repas macabre mais nécessaire."
+  },
+  "Careless Fire": {
+    "Careless Fire_day": "Tribute 1, en essayant d'allumer un feu, se brûle par imprudence."
+  },
+  "Resourceful Crafting": {
+    "Resourceful Crafting_day": "Utilisant son sac à dos et sa trousse de premiers soins, Tribute 1 fabrique une gourde et des bandages."
+  },
+  "Stolen Provisions": {
+    "Stolen Provisions_night": "À la faveur de l'obscurité, Tribute 1 vole de la nourriture et de l'eau dans les maigres réserves de Tribute 2."
+  },
+  "Gift Offering": {
+    "Gift Offering_night": "Voyant les blessures de Tribute 2, Tribute 1 lui offre de précieux médicaments en signe de bonne volonté."
   }
 }

@@ -298,8 +298,16 @@ tributes = [
     Tribute("Lisandru", "M", "District2"),
     Tribute("Maxime", "M", "District2"),
     Tribute("Yassine", "M", "District2"),
-
-    # Add more tributes
+    Tribute("Max", "M", "District1"),
+    Tribute("Telly", "M", "District2"),
+    Tribute("Sauveur", "M", "District1"),
+    Tribute("Adham", "M", "District2"),
+    Tribute("Marwane", "M", "District1"),
+    Tribute("JB", "M", "District2"),
+    Tribute("Gwendal", "M", "District2"),
+    Tribute("Jacques", "M", "District2"),
+    Tribute("Kamel", "M", "District2"),
+    Tribute("AF", "M", "District1"),
 ]
 
 # Load actions from JSON files
