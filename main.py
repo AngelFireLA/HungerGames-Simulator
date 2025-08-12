@@ -28,11 +28,11 @@ class Tribute:
 
     def change_health(self, amount):
         self.health += amount
+        self.health = max(0, min(self.health, 100))  # Health should be between 0 and 100
         if amount > 0:
             print(f"{self.name} +{amount}❤️ ({self.health}❤️)")
         else:
             print(f"{self.name} {amount}❤️ ({self.health}❤️)")
-        self.health = max(0, min(self.health, 100))  # Health should be between 0 and 100
         if self.health == 0:
             self.is_alive = False
             print(f"{self.name} 💀")
@@ -83,7 +83,7 @@ class Action:
         self.bonus_items = bonus_items or {}
         self.removed_items = removed_items or {}
         self.relation_changes = relation_changes or {}
-        self.requirements = requirements
+        self.requirements = requirements or {}
 
     def __repr__(self):
         return f"Action(name={self.name})"
@@ -104,10 +104,12 @@ class Game:
         input()
         self.day_count += 1
         self.run_actions(self.action_pools['day'])
+        print()
 
     def run_night(self):
         input()
         self.run_actions(self.action_pools['night'])
+        print()
 
     def run_actions(self, action_pool):
         available_tributes = [t for t in self.tributes if t.is_alive]
@@ -148,10 +150,14 @@ class Game:
                 for item in reqs.get('items', []):
                     if item.lower() not in [inv_item.lower() for inv_item in tribute.inventory]:
                         return False
-                # Check relations requirements
                 for target_index, status in reqs.get('relations', {}).items():
-                    if str(target_index) in tribute.relations and tribute.relations[str(target_index)] != status:
+                    try:
+                        target_name = tributes[int(target_index)].name
+                    except (IndexError, ValueError):
                         return False
+                    if target_name not in tribute.relations or tribute.relations[target_name] != status:
+                        return False
+
         return True
 
     def execute_action(self, tributes, action):
@@ -281,7 +287,7 @@ class Game:
 
 class Config:
     def __init__(self, config_file):
-        with open(config_file, 'r') as file:
+        with open(config_file, 'r', encoding="utf-8") as file:
             config = json.load(file)
             self.language = config.get('language', 'en')
 
@@ -290,24 +296,15 @@ config = Config('config.json')
 # Create tributes
 tributes = [
     Tribute("Lysandre", "M", "District1"),
-    Tribute("Olivier", "M", "District2"),
-    Tribute("Enzo", "M", "District1"),
-    Tribute("Ayoub", "M", "District2"),
-    Tribute("Emrys", "M", "District1"),
-    Tribute("Ludo", "M", "District2"),
-    Tribute("Lisandru", "M", "District2"),
-    Tribute("Maxime", "M", "District2"),
-    Tribute("Yassine", "M", "District2"),
-    Tribute("Max", "M", "District1"),
-    Tribute("Telly", "M", "District2"),
-    Tribute("Sauveur", "M", "District1"),
-    Tribute("Adham", "M", "District2"),
-    Tribute("Marwane", "M", "District1"),
-    Tribute("JB", "M", "District2"),
-    Tribute("Gwendal", "M", "District2"),
-    Tribute("Jacques", "M", "District2"),
-    Tribute("Kamel", "M", "District2"),
-    Tribute("AF", "M", "District1"),
+    Tribute("Alexandre", "M", "District2"),
+    Tribute("Lorenzo", "M", "District1"),
+    Tribute("Sam", "M", "District2"),
+    Tribute("André", "M", "District1"),
+    Tribute("Fiora", "M", "District2"),
+    Tribute("Kilian", "M", "District2"),
+    Tribute("Louis", "M", "District2"),
+    Tribute("Moha", "M", "District2"),
+    Tribute("Dominique", "M", "District2"),
 ]
 
 # Load actions from JSON files

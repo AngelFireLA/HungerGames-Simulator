@@ -171,11 +171,9 @@
         "stats_changes": {},
         "bonus_items": {},
         "removed_items": {
-            "0": {
-              "items":["Arrow"]
-            }
-
+            "0": ["Arrow"]
         },
+
         "relation_changes": {},
         "requirements": {
             "0": {
