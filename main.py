@@ -295,16 +295,6 @@ config = Config('config.json')
 
 # Create tributes
 tributes = [
-    Tribute("Lysandre", "M", "District1"),
-    Tribute("Alexandre", "M", "District2"),
-    Tribute("Lorenzo", "M", "District1"),
-    Tribute("Sam", "M", "District2"),
-    Tribute("André", "M", "District1"),
-    Tribute("Fiora", "M", "District2"),
-    Tribute("Kilian", "M", "District2"),
-    Tribute("Louis", "M", "District2"),
-    Tribute("Moha", "M", "District2"),
-    Tribute("Dominique", "M", "District2"),
 ]
 
 # Load actions from JSON files

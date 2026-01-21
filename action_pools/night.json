@@ -617,22 +617,6 @@
         "requirements": {}
     },
     {
-        "name": "Eaten by Mysterious Creature",
-        "usually_lethal": true,
-        "num_affected": 1,
-        "num_killers": 0,
-        "killers": [],
-        "stats_changes": {
-            "0": {
-                "health": -100
-            }
-        },
-        "bonus_items": {},
-        "removed_items": {},
-        "relation_changes": {},
-        "requirements": {}
-    },
-    {
         "name": "Sleeps Peacefully",
         "usually_lethal": false,
         "num_affected": 1,
